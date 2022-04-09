@@ -6,12 +6,12 @@ import HeadNav from "../components/HeadNav";
 function Dashboard() {
   return (
     <>
-      <div className="bg-abuabu min-h-screen">
+      <div className="bg-abuabu min-h-screen font-lato">
         <HeadNav warnaBg='bg-putih' />
-        <main className="pt-48 pb-12 px-8 flex flex-row">
+        <main className="pt-48 pb-32 px-8 flex flex-row">
           <div className="w-56"></div>
-          <div className="grow flex justify-center items-center flex-col gap-12">
-            <div className="text-4xl uppercase font-bold text-hijau-dark">freelance sigap</div>
+          <div className="grow flex justify-center items-center flex-col gap-24">
+            <div className="text-5xl uppercase font-bold text-hijau-dark">freelance sigap</div>
             <div className="flex flex-row gap-8">
               <div className="bg-putih w-96 text-putih rounded-lg border-2 border-hijau-med">
                 <div className="bg-hijau-med text-center px-12 py-2 text-3xl uppercase font-semibold h-24">social networking</div>

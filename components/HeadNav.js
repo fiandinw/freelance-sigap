@@ -18,6 +18,10 @@ function HeadNav(props) {
         <div className="nav-link cursor-pointer">support center</div>
         <div className="nav-link cursor-pointer">terms and conditions</div>
       </nav>
+      <div className="flex flex-row text-2xl uppercase items-center cursor-pointer">
+        <div className="bg-hijau-tua border-hijau-tua border-2 px-6 py-2 flex items-center justify-center rounded-l-lg text-putih">sign in</div>
+        <div className="border-2 border-hijau-tua px-6 py-2 flex items-center justify-center rounded-r-lg text-hijau-tua">sign up</div>
+      </div>
     </header>
   )
 }

@@ -20,14 +20,14 @@ function Status() {
 
   return (
     <>
-      <div className="bg-abuabu min-h-screen">
+      <div className="bg-abuabu min-h-screen font-lato">
         <HeadNav warnaBg='bg-putih' />
         <main className="pt-32 pb-12 px-8 flex flex-col items-center justify-center gap-8 min-h-screen">
-          <div className="text-5xl uppercase text-hijau-dark">status order</div>
-          <div className="w-6/12 bg-hitam text-putih flex flex-col items-center justify-center p-8 gap-8 rounded-2xl">
-            <div className="flex flex-row gap-4">
+          <div className="text-5xl uppercase text-hijau-dark font-extrabold">status order</div>
+          <div className="w-6/12 bg-hitam text-putih flex flex-col items-center justify-center p-8 gap-8 rounded-2xl text-4xl">
+            <div className="flex flex-row gap-36">
               <div>
-                <ul>
+                <ul className="leading-relaxed">
                   <li>ID ORDER</li>
                   <li>NAMA PEMESAN</li>
                   <li>JENIS JASA</li>
@@ -38,14 +38,14 @@ function Status() {
               </div>
               <div>
                 <div>
-                  <ul>
-                    <li>ID ORDER</li>
-                    <li>NAMA PEMESAN</li>
-                    <li>JENIS JASA</li>
-                    <li>SUB JENIS JASA</li>
-                    <li>HARGA JASA</li>
+                  <ul className="leading-relaxed">
+                    <li>: ID ORDER</li>
+                    <li>: NAMA PEMESAN</li>
+                    <li>: JENIS JASA</li>
+                    <li>: SUB JENIS JASA</li>
+                    <li>: HARGA JASA</li>
                     <li className="font-bold">
-                      {statusBayar ? 'SUDAH BAYAR' : 'BELUM BAYAR'}
+                      {statusBayar ? ': SUDAH BAYAR' : ': BELUM BAYAR'}
                     </li>
                   </ul>
                 </div>

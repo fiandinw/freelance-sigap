@@ -15,14 +15,14 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-abuabu min-h-screen">
-        <HeadNav warnaBg='bg-abuabu' />
-        <main>
+      <div className="bg-gradient-to-br from-putih to-hijau-muda min-h-screen font-lato">
+        <HeadNav warnaBg='bg-putih' />
+        <main className="">
           <section className="min-h-screen pt-24">
-            <div className="italic font-semibold text-4xl text-hijau-tua mx-auto w-fit mt-24 mb-8">Stand With Local</div>
+            <div className="italic text-4xl text-hijau-tua mx-auto w-fit mt-24 mb-8 font-bold">Stand With Local</div>
             <div className="bg-hitam text-putih flex flex-row justify-between">
               <div className="p-12 shrink w-7/12 flex justify-between flex-col">
-                <div className="font-bold text-7xl leading-snug">Find the perfect <span className="italic text-hijau-muda">freelance</span> services for your business</div>
+                <div className="font-semibold text-7xl leading-snug font-montserrat">Find the perfect <span className="italic text-hijau-muda">freelance</span> services for your business</div>
                 <Link href='/login' passHref>
                   <div className="uppercase bg-hijau-tua font-semibold text-abuabu text-4xl w-fit px-14 py-3 rounded-lg cursor-pointer hover:text-putih">join now</div>
                 </Link>
@@ -47,14 +47,14 @@ export default function Home() {
             </div>
             <div className="absolute top-0 left-0 right-0 p-64 flex flex-col justify-center items-center h-full gap-12">
               <div className="bg-hijau-tua text-putih px-4 py-2 uppercase font-bold text-3xl">freelance sigap</div>
-              <div className=" text-abuabu text-2xl text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea vero aut libero minus ratione facilis beatae quos aspernatur quibusdam fugiat ullam quae, temporibus ipsam labore repudiandae perferendis reiciendis officiis eos nobis! Molestias similique iste cum obcaecati eligendi perferendis unde cumque recusandae error possimus tempore impedit, magni ad sed sequi ipsum inventore quasi laboriosam autem itaque voluptates suscipit? Cupiditate asperiores qui delectus perferendis non praesentium sequi, recusandae corrupti, incidunt repudiandae et laborum. Id similique molestias molestiae facilis. Nisi, libero optio!</div>
+              <div className=" text-abuabu text-2xl text-justify font-opensans">Freelance Sigap merupakan Startup Entrepreneurship Technology yang bergerak pada bidang pelayanan jasa multimedia dan produk kreatif, kepenulisan dan penerjemahan serta permasalahan teknis dan non-teknis rumah. Jasa yang terdaftar diintegrasikan ke teknologi. Semua itu dengan tujuan mengaktivasi fungsi Freelance Sigap sebagai startup yang mengusung nilai efisiensi. Freelance Sigap hadir untuk menyederhanakan dan mempraktiskan kerja serta kebutuhan zaman. Di samping itu, sistem yang ditawarkan memprioritaskan kenyamanan dan kepuasan konsumen serta memberi kelayakan kepada pekerja kreatif. Hal ini dimunculkan untuk membuat lingkup positif dalam transaksional.</div>
             </div>
           </section>
           <section className="h-32 p-16 min-h-screen flex flex-col justify-center items-center">
-            <div className="text-hijau-tua text-4xl">Stand With Local</div>
+            <div className="text-hijau-tua text-5xl font-bold">Stand With Local</div>
             <div className="grow flex items-center justify-center">
-              <div className="bg-hijau-tua text-putih p-8 rounded-lg text-4xl">
-                Maintenance Social Networking
+              <div className="bg-hijau-tua text-putih px-20 p-8 rounded-lg text-4xl uppercase text-center">
+                Maintenance<br />Social Networking
               </div>
             </div>
           </section>

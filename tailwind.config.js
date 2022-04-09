@@ -4,7 +4,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'montserrat': ['Montserrat Alternates', 'sans-serif'],
+        'lato': ['Lato', 'sans-serif'],
+        'opensans': ['Open Sans', 'sans-serif']
+      }
+    },
     colors: {
       'hitam': '#151515',
       'abuabu': '#DCDCDC',
@@ -15,7 +21,8 @@ module.exports = {
       'hijau-dark': '#1A4331',
       'hijau-med':'#4E8B65',
       'hijau-med-dark':'#347B4E',
-      'biru': '#45B9FF'
+      'biru': '#45B9FF',
+      'merah':'#DC2626'
     }
   },
   plugins: [],

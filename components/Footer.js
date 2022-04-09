@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-hijau-med text-hijau-black px-16 py-8 flex flex-row justify-between">
       <div className="grow-0">
-        <div>
+        <div className="font-montserrat">
           <div className="font-bold text-4xl uppercase">Freelance</div>
           <div className="font-bold text-4xl uppercase text-putih">Sigap</div>
         </div>
