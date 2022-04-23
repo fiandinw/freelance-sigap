@@ -8,6 +8,7 @@ function Products() {
       <HeadNav warnaBg='bg-putih' />
       <main className="pt-32 pb-32 px-8 flex flex-col min-h-screen gap-8">
         <h1>Support Center</h1>
+        <p>support@freelancesigap.com</p>
       </main>
       <Footer />
     </div>

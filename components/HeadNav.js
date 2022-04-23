@@ -17,6 +17,9 @@ function HeadNav(props) {
         <Link href="/about" passHref>
           <div className="nav-link cursor-pointer">about</div>
         </Link>
+        <a href="#faqsection">
+          <div className="nav-link cursor-pointer">faq</div>
+        </a>
         <Link href="/support-center" passHref>
           <div className="nav-link cursor-pointer">support center</div>
         </Link>
