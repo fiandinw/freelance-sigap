@@ -8,11 +8,11 @@ function FaqAccordion(props) {
   }
 
   return (
-    <div onClick={toggleActive} className="flex flex-col items-center">
-      <div className={`text-abuabu bg-hijau-tua ${!isActive ? 'rounded-xl' : 'rounded-t-xl'} p-4 text-sm flex items-center`}>
-        {props.title}<span className="mr-4"></span><i className="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+    <div onClick={toggleActive} className="flex flex-col w-full items-center px-96">
+      <div className={`text-hijau-tua ${!isActive ? 'rounded-xl' : 'rounded-t-xl'} p-4 text-sm flex items-center justify-between w-full`}>
+        <p>{props.title}</p><i className="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
       </div>
-      <div className={`bg-hijau-tua text-abuabu text-xs rounded-lg max-w-xl overflow-hidden transition-all ${!isActive ? 'h-0 p-0' : 'h-fit p-4'}`}>
+      <div className={`text-hijau-tua text-xs rounded-lg w-full overflow-hidden transition-all ${!isActive ? 'h-0 p-0' : 'h-fit px-8'}`}>
         {props.description}
       </div>
     </div>
