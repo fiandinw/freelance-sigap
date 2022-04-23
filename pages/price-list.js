@@ -11,7 +11,7 @@ function PriceList() {
         <div className="text-center text-xl text-hijau-tua font-bold">Price List</div>
 
         <div className="flex">
-          <Link href="/product">
+          <Link href="/product" passHref>
             <div className="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
               <a className="w-full block h-full">
                 <img alt="blog photo" src="https://picsum.photos/200" className="max-h-40 w-full object-cover" />
@@ -42,7 +42,7 @@ function PriceList() {
               </a>
             </div>
           </Link>
-          <Link href="/product">
+          <Link href="/product" passHref>
             <div className="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
               <a className="w-full block h-full">
                 <img alt="blog photo" src="https://picsum.photos/200" className="max-h-40 w-full object-cover" />
@@ -73,7 +73,7 @@ function PriceList() {
               </a>
             </div>
           </Link>
-          <Link href="/product">
+          <Link href="/product" passHref>
             <div className="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
               <a className="w-full block h-full">
                 <img alt="blog photo" src="https://picsum.photos/200" className="max-h-40 w-full object-cover" />

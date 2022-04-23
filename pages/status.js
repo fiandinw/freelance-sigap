@@ -54,7 +54,7 @@ function Status() {
             <div>
               {!statusBayar ? (
                 <>
-                  <a href="https://app.sandbox.midtrans.com/snap/v2/vtweb/16b7a677-fa73-44fd-ba18-3a9aaf234cf8#/select-payment" target="_blank" className="bg-hijau-med px-8 py-2 font-bold rounded-lg">CHECKOUT</a>
+                  <a href="https://app.sandbox.midtrans.com/snap/v2/vtweb/16b7a677-fa73-44fd-ba18-3a9aaf234cf8#/select-payment" target="_blank" rel="noreferrer" className="bg-hijau-med px-8 py-2 font-bold rounded-lg">CHECKOUT</a>
                 </>
               ) : (
                 <>
