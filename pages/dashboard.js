@@ -7,25 +7,27 @@ function Dashboard() {
   return (
     <>
       <div className="bg-abuabu min-h-screen font-lato">
-        <HeadNav warnaBg='bg-putih' />
+        <HeadNav warnaBg='bg-putih' login/>
         <main className="pt-48 pb-32 px-8 flex flex-row">
           <div className="w-56"></div>
           <div className="grow flex justify-center items-center flex-col gap-24">
             <div className="text-5xl uppercase font-bold text-hijau-dark">freelance sigap</div>
             <div className="flex flex-row gap-8">
               <div className="bg-putih w-96 text-putih rounded-lg border-2 border-hijau-med">
-                <div className="bg-hijau-med text-center px-12 py-2 text-3xl uppercase font-semibold h-24">social networking</div>
+                <div className="bg-hijau-med text-center px-12 py-2 text-3xl uppercase font-semibold h-24 flex items-center justify-center">main profile</div>
                 <div className="h-72 p-16 text-center">
                   <Image src='/images/icon-networking.png' width='200' height='200' alt="icon-networking"/>
                 </div>
-                <div className="p-4"><button className="bg-hijau-med-dark w-full text-xl uppercase font-semibold p-2 rounded-lg">find freelancer</button></div>
+                <Link href="/price-list" passHref>
+                  <div className="p-4"><button className="bg-hijau-med-dark w-full text-xl uppercase font-semibold p-2 rounded-lg">main profile</button></div>
+                </Link>
               </div>
               <div className="bg-putih w-96 text-putih rounded-lg border-2 border-hijau-med">
-                <div className="bg-hijau-med text-center px-12 py-2 text-3xl uppercase font-semibold h-24 flex items-center justify-center">form e-order</div>
+                <div className="bg-hijau-med text-center px-12 py-2 text-3xl uppercase font-semibold h-24 flex items-center justify-center">instant order</div>
                 <div className="h-72 p-16 text-center">
                   <Image src='/images/icon-form.png' width='200' height='200' alt="icon-form"/>
                 </div>
-                <Link href='/order' passHref><div className="p-4"><button className="bg-hijau-med-dark w-full text-xl uppercase font-semibold p-2 rounded-lg">make an order</button></div></Link>
+                <Link href='/instant-order' passHref><div className="p-4"><button className="bg-hijau-med-dark w-full text-xl uppercase font-semibold p-2 rounded-lg">make an order</button></div></Link>
               </div>
             </div>
           </div>

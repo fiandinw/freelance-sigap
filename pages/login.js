@@ -38,13 +38,13 @@ function Login() {
     <>
       <div className="bg-abuabu min-h-screen font-lato">
         <div className="flex flex-row min-h-screen items-center">
-          <form ref={formRef} onSubmit={handleLogin} className="w-[700px] px-14 py-24 self-stretch">
-            <div className="bg-hijau-tua rounded-3xl text-putih p-12 h-full flex flex-col justify-between">
+          <form ref={formRef} onSubmit={handleLogin} className="w-5/12 px-12 py-8 self-stretch">
+            <div className="bg-hijau-tua rounded-3xl text-putih p-8 h-full flex flex-col justify-between">
               <div>I - DEPTHRIVE | Stand With Local</div>
-              <div className="font-bold text-2xl">Telah memiliki 500 juta pengguna di seluruh Dunia (contohnya)</div>
-              <div className="flex flex-col gap-8">
+              <div className="font-bold">Telah memiliki 500 juta pengguna di seluruh Dunia (contohnya)</div>
+              <div className="flex flex-col gap-4">
                 <div>
-                  <button type="button" className="py-2 px-4 flex justify-center items-center bg-merah hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                  <button type="button" className="py-2 px-4 flex justify-center items-center bg-merah hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
                     <svg width="20" height="20" fill="currentColor" className="mr-2" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                       <path d="M896 786h725q12 67 12 128 0 217-91 387.5t-259.5 266.5-386.5 96q-157 0-299-60.5t-245-163.5-163.5-245-60.5-299 60.5-299 163.5-245 245-163.5 299-60.5q300 0 515 201l-209 201q-123-119-306-119-129 0-238.5 65t-173.5 176.5-64 243.5 64 243.5 173.5 176.5 238.5 65q87 0 160-24t120-60 82-82 51.5-87 22.5-78h-436v-264z">
                       </path>
@@ -53,23 +53,23 @@ function Login() {
                   </button>
                 </div>
                 <div className="flex flex-row border-hijau-black border-2 rounded-lg ">
-                  <span className="w-16 p-3 text-center"><i className="fa fa-envelope-o fa-2x" aria-hidden="true"></i></span>
-                  <input className="bg-hijau-tua grow focus:outline-none text-xl" type="text" name="" id="" placeholder="" />
+                  <span className="w-12 p-2 text-center"><i className="fa fa-envelope-o fa-lg" aria-hidden="true"></i></span>
+                  <input className="bg-hijau-tua grow focus:outline-none" type="text" name="" id="" placeholder="" />
                 </div>
                 <div className="flex flex-row border-hijau-black border-2 bg-hijau-dark rounded-lg ">
-                  <span className="w-16 p-3 text-center"><i className="fa fa-user-o fa-2x" aria-hidden="true"></i></span>
-                  <input className="bg-hijau-dark grow focus:outline-none text-xl" type="text" name="" id="" />
+                  <span className="w-12 p-2 text-center"><i className="fa fa-user-o fa-lg" aria-hidden="true"></i></span>
+                  <input className="bg-hijau-dark grow focus:outline-none" type="text" name="" id="" />
                 </div>
                 <div className="flex flex-row border-hijau-black border-2 rounded-lg ">
-                  <span className="w-16 p-3 text-center"><i className="fa fa-lock fa-2x" aria-hidden="true"></i></span>
-                  <input className="bg-hijau-tua grow focus:outline-none text-xl" type="password" name="" id="" />
+                  <span className="w-12 p-2 text-center"><i className="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                  <input className="bg-hijau-tua grow focus:outline-none" type="password" name="" id="" />
                 </div>
                 <div>
                   <input type="checkbox" name="agree" id="agree" />
                   <label htmlFor="agree">Saya Menyetujui Syarat dan Ketentuan yang Berlaku</label>
                 </div>
               </div>
-              <button type="submit" className="uppercase bg-hijau-dark w-full p-4 rounded-xl font-bold text-2xl text-abuabu hover:text-putih">
+              <button type="submit" className="uppercase bg-hijau-dark w-full p-4 rounded-xl font-bold text-abuabu hover:text-putih">
                 masuk
               </button>
               <div>
@@ -88,7 +88,7 @@ function Login() {
               <div ref={subTitleRef} className="text-hijau-tua text-6xl italic">Stand With Local</div>
             </div>
             <div ref={logoRef} className="self-end">
-              <Image src="/images/logogram.png" width={500} height={500} alt='logogram'></Image>
+              <Image src="/images/logogram.png" width={200} height={200} alt='logogram'></Image>
             </div>
           </div>
         </div>

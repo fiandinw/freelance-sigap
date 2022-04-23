@@ -23,7 +23,7 @@ module.exports = {
       'hijau-med-dark':'#347B4E',
       'biru': '#45B9FF',
       'merah':'#DC2626'
-    }
+    },
   },
   plugins: [],
   darkMode: "class",

@@ -28,10 +28,10 @@ function Order() {
   return (
     <>
       <div className="bg-abuabu min-h-screen font-lato">
-        <HeadNav warnaBg='bg-putih' />
+        <HeadNav warnaBg='bg-putih' login />
         <main className="pt-32 pb-12">
           <form onSubmit={handleSubmit} className="flex flex-col w-screen items-center px-32 gap-4">
-            <div className="text-hijau-tua uppercase font-bold text-4xl">form e-order</div>
+            <div className="text-hijau-tua uppercase font-bold text-4xl">Instant Order</div>
             <div className="w-full">
               <label className="text-hijau-tua font-semibold text-xl" htmlFor="nama">Nama</label>
               <input className="w-full border-hijau-tua border-2 rounded-md bg-abuabu px-3 py-1 text-hijau-black focus:outline-none" id="nama" name="nama" type="text" placeholder="Masukan Nama Anda" />

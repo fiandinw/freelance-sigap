@@ -43,7 +43,7 @@ function Status() {
                     <li>: NAMA PEMESAN</li>
                     <li>: JENIS JASA</li>
                     <li>: SUB JENIS JASA</li>
-                    <li>: HARGA JASA</li>
+                    <li>: 10000</li>
                     <li className="font-bold">
                       {statusBayar ? ': SUDAH BAYAR' : ': BELUM BAYAR'}
                     </li>
@@ -54,7 +54,7 @@ function Status() {
             <div>
               {!statusBayar ? (
                 <>
-                  <button onClick={handleCheckout} className="bg-hijau-med px-8 py-2 font-bold rounded-lg">CHECKOUT</button>
+                  <a href="https://app.sandbox.midtrans.com/snap/v2/vtweb/16b7a677-fa73-44fd-ba18-3a9aaf234cf8#/select-payment" target="_blank" className="bg-hijau-med px-8 py-2 font-bold rounded-lg">CHECKOUT</a>
                 </>
               ) : (
                 <>

@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useEffect } from "react";
+import FaqAccordion from "../components/FaqAccordion";
 import Footer from "../components/Footer";
 import HeadNav from "../components/HeadNav";
 
@@ -18,24 +19,24 @@ export default function Home() {
       <div className="bg-gradient-to-br from-putih to-hijau-muda min-h-screen font-lato">
         <HeadNav warnaBg='bg-putih' />
         <main className="">
-          <section className="min-h-screen pt-24">
-            <div className="italic text-4xl text-hijau-tua mx-auto w-fit mt-24 mb-8 font-bold">Stand With Local</div>
+          <section className="min-h-screen pt-12 flex flex-col justify-center">
+            <div className="italic text-xl text-hijau-tua mx-auto w-fit mt-24 mb-8 font-bold">Stand With Local</div>
             <div className="bg-hitam text-putih flex flex-row justify-between">
               <div className="p-12 shrink w-7/12 flex justify-between flex-col">
-                <div className="font-semibold text-7xl leading-snug font-montserrat">Find the perfect <span className="italic text-hijau-muda">freelance</span> services for your business</div>
+                <div className="font-semibold text-4xl leading-snug font-montserrat">Find the perfect <span className="italic text-hijau-muda">freelance</span> services for your business</div>
                 <Link href='/login' passHref>
-                  <div className="uppercase bg-hijau-tua font-semibold text-abuabu text-4xl w-fit px-14 py-3 rounded-lg cursor-pointer hover:text-putih">join now</div>
+                  <div className="uppercase bg-hijau-tua font-semibold text-abuabu text-xl w-fit px-14 py-3 rounded-lg cursor-pointer hover:text-putih">join now</div>
                 </Link>
               </div>
               <div ref={sigapbotref}>
-                <Image src="/images/Sigapbot3.png" width={450} height={450} alt='sigapbot' />
+                <Image src="/images/Sigapbot3.png" width={300} height={300} alt='sigapbot' />
               </div>
             </div>
-            <div className="flex flex-row gap-8 text-hijau-black mt-24 p-16">
-              <i className="fa fa-facebook-square fa-3x cursor-pointer" aria-hidden="true"></i>
-              <i className="fa fa-twitter-square fa-3x cursor-pointer" aria-hidden="true"></i>
-              <i className="fa fa-whatsapp fa-3x cursor-pointer" aria-hidden="true"></i>
-              <i className="fa fa-instagram fa-3x cursor-pointer" aria-hidden="true"></i>
+            <div className="flex flex-row gap-8 text-hijau-black mt-4 p-16">
+              <i className="fa fa-facebook-square fa-2x cursor-pointer" aria-hidden="true"></i>
+              <i className="fa fa-twitter-square fa-2x cursor-pointer" aria-hidden="true"></i>
+              <i className="fa fa-whatsapp fa-2x cursor-pointer" aria-hidden="true"></i>
+              <i className="fa fa-instagram fa-2x cursor-pointer" aria-hidden="true"></i>
             </div>
           </section>
           <section className="relative h-screen">
@@ -49,6 +50,51 @@ export default function Home() {
               <div className="bg-hijau-tua text-putih px-4 py-2 uppercase font-bold text-3xl">freelance sigap</div>
               <div className=" text-abuabu text-2xl text-justify font-opensans">Freelance Sigap merupakan Startup Entrepreneurship Technology yang bergerak pada bidang pelayanan jasa multimedia dan produk kreatif, kepenulisan dan penerjemahan serta permasalahan teknis dan non-teknis rumah. Jasa yang terdaftar diintegrasikan ke teknologi. Semua itu dengan tujuan mengaktivasi fungsi Freelance Sigap sebagai startup yang mengusung nilai efisiensi. Freelance Sigap hadir untuk menyederhanakan dan mempraktiskan kerja serta kebutuhan zaman. Di samping itu, sistem yang ditawarkan memprioritaskan kenyamanan dan kepuasan konsumen serta memberi kelayakan kepada pekerja kreatif. Hal ini dimunculkan untuk membuat lingkup positif dalam transaksional.</div>
             </div>
+          </section>
+          <section className="flex flex-col items-center justify-center my-8">
+            <div><Link href="/custom-order" passHref><button className="p-4 bg-hijau-tua text-abuabu text-4xl rounded-lg">Custom Order</button></Link></div>
+          </section>
+          <section className="flex flex-col items-center justify-center p-4 gap-4">
+            <div className="text-hijau-tua font-bold text-2xl">
+              Kategori
+            </div>
+            <div className="flex gap-4">
+              <div className="relative bg-putih w-[300px] h-[200px]">
+                <img className="absolute" src="https://picsum.photos/300/200" alt="foto" />
+                <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
+                <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
+              </div>
+              <div className="relative bg-putih w-[300px] h-[200px]">
+                <img className="absolute" src="https://picsum.photos/300/200" alt="foto" />
+                <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
+                <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
+              </div>
+              <div className="relative bg-putih w-[300px] h-[200px]">
+                <img className="absolute" src="https://picsum.photos/300/200" alt="foto" />
+                <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
+                <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
+              </div>
+              <div className="relative bg-putih w-[300px] h-[200px]">
+                <img className="absolute" src="https://picsum.photos/300/200" alt="foto" />
+                <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
+                <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
+              </div>
+            </div>
+          </section>
+          <section className="relative flex flex-col items-center justify-center gap-4">
+            <div className="uppercase font-bold text-hijau-tua text-xl">faq</div>
+            <FaqAccordion 
+            title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, veniam!"
+            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad mollitia optio voluptate reiciendis delectus amet eius laudantium repellendus esse sequi quod, dolor obcaecati facere autem placeat vero quisquam. Optio, soluta."
+            />
+            <FaqAccordion 
+            title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, veniam!"
+            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad mollitia optio voluptate reiciendis delectus amet eius laudantium repellendus esse sequi quod, dolor obcaecati facere autem placeat vero quisquam. Optio, soluta."
+            />
+            <FaqAccordion 
+            title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, veniam!"
+            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad mollitia optio voluptate reiciendis delectus amet eius laudantium repellendus esse sequi quod, dolor obcaecati facere autem placeat vero quisquam. Optio, soluta."
+            />
           </section>
           <section className="h-32 p-16 min-h-screen flex flex-col justify-center items-center">
             <div className="text-hijau-tua text-5xl font-bold">Stand With Local</div>
