@@ -14,12 +14,12 @@ function Dashboard() {
             <div className="text-5xl uppercase font-bold text-hijau-dark">freelance sigap</div>
             <div className="flex flex-row gap-8">
               <div className="bg-putih w-96 text-putih rounded-lg border-2 border-hijau-med">
-                <div className="bg-hijau-med text-center px-12 py-2 text-3xl uppercase font-semibold h-24 flex items-center justify-center">main profile</div>
+                <div className="bg-hijau-med text-center px-12 py-2 text-3xl uppercase font-semibold h-24 flex items-center justify-center">explore services</div>
                 <div className="h-72 p-16 text-center">
                   <Image src='/images/icon-networking.png' width='200' height='200' alt="icon-networking"/>
                 </div>
                 <Link href="/price-list" passHref>
-                  <div className="p-4"><button className="bg-hijau-med-dark w-full text-xl uppercase font-semibold p-2 rounded-lg">main profile</button></div>
+                  <div className="p-4"><button className="bg-hijau-med-dark w-full text-xl uppercase font-semibold p-2 rounded-lg">explore services</button></div>
                 </Link>
               </div>
               <div className="bg-putih w-96 text-putih rounded-lg border-2 border-hijau-med">
