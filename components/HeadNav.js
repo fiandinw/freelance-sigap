@@ -1,33 +1,43 @@
 import Image from "next/image"
 import Link from "next/link";
 
-function HeadNav (props) {
+function HeadNav(props) {
   return (
-    // px di header menentukan layout keselruhan
-    <header className="fixed top-0 w-screen z-50 px-16 py-8">
-      <nav className="bg-white flex flex-row items-center justify-between rounded-full px-4 py-2 shadow-lg">
+    props.type === 'landing' ? (
+      // px di header menentukan layout keselruhan
+      <header className="fixed top-0 w-screen z-50 px-16 2xl:px-32 py-8">
+        <nav className="bg-white flex flex-row items-center justify-between rounded-full px-4 py-2 shadow-lg">
 
-        <div className="flex items-center gap-2 cursor-pointer">
-          <img className="w-8" src="/images/logogram.png" alt="logogram" />
-          <div className="capitalize font-lato"><span className="font-extrabold text-sigap-ijo">freelance</span> <span className="font-bold">sigap</span></div>
-        </div>
+          <div className="flex items-center gap-2 cursor-pointer">
+            <img className="w-8" src="/images/logogram.png" alt="logogram" />
+            <div className="capitalize font-lato"><span className="font-extrabold text-sigap-ijo">freelance</span> <span className="font-bold">sigap</span></div>
+          </div>
 
-        <div className="flex items-center gap-8">
-          <div className="capitalize font-bold cursor-pointer">home</div>
-          <div className="capitalize cursor-pointer">about</div>
-          <div className="uppercase cursor-pointer">faq</div>
-          <div className="capitalize cursor-pointer">description</div>
-          <div className="capitalize cursor-pointer">support center</div>
-          <div className="capitalize cursor-pointer">terms and conditions</div>
-        </div>
+          <div className="flex items-center gap-8">
+            <div className="capitalize font-bold cursor-pointer">home</div>
+            <div className="capitalize cursor-pointer">about</div>
+            <div className="uppercase cursor-pointer">faq</div>
+            <div className="capitalize cursor-pointer">description</div>
+            <div className="capitalize cursor-pointer">support center</div>
+            <div className="capitalize cursor-pointer">terms and conditions</div>
+          </div>
 
-        <div className="flex items-center gap-2">
-          <div className="cursor-pointer w-20 text-center font-semibold uppercase">sign in</div>
-          <div className="cursor-pointer w-20 py-1 bg-sigap-ijo text-center text-white font-bold uppercase rounded-full">join</div>
-        </div>
+          <div className="flex items-center gap-2">
+            <Link href='/login' passHref>
+              <div className="cursor-pointer w-20 text-center font-semibold uppercase">sign in</div>
+            </Link>
+            <Link href='/login' passHref>
+              <div className="cursor-pointer w-20 py-1 bg-sigap-ijo text-center text-white font-bold uppercase rounded-full">join</div>
+            </Link>
+          </div>
 
-      </nav>
-    </header>
+        </nav>
+      </header>
+    ) : (
+      <header className="fixed top-0 w-screen z-50 px-16 2xl:px-32 py-8 bg-white">
+        <div className="bg-red-500">asd</div>
+      </header>
+    )
   )
 }
 

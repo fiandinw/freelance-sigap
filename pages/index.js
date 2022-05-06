@@ -1,3 +1,5 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { gsap } from "gsap";
 import Head from "next/head";
 import Image from "next/image";
@@ -11,45 +13,104 @@ export default function Home() {
   const sigapbotref = useRef()
 
   useEffect(() => {
-    gsap.to(sigapbotref.current, { y: '-30', repeat: '-1', duration: 1, yoyoEase: true })
+    // gsap.to(sigapbotref.current, { y: '-30', repeat: '-1', duration: 1, yoyoEase: true })
+    AOS.init({
+      delay: 100
+    })
   })
 
   return (
     <div className="bg-[url('/images/bg.png')] bg-no-repeat bg-contain min-h-screen relative">
-      <HeadNav />
+      <HeadNav type="landing" />
       <div className="py-16"></div>
 
-      <main className="px-16">
+      <main className="flex flex-col gap-24 px-16 2xl:px-32 items-center">
         <section className="flex flex-row w-full items-center py-12 2xl:py-24">
           <div className="w-1/2 self-stretch flex flex-col items-start justify-center gap-8">
             <div className="font-lato font-bold text-5xl 2xl:text-7xl capitalize">are you looking for freelancers?</div>
             <div className="capitalize opacity-60 2xl:text-2xl">hire great freelancers, fast. spacelance helps you hire elite freelancers at a moment&apos;s notice</div>
-            <div><button className="bg-sigap-ijo px-16 py-4 text-white font-bold capitalize rounded-full">find your freelance</button></div>
+            <div>
+              <Link href="/login" passHref>
+                <button className="bg-sigap-ijo px-16 py-4 text-white font-bold capitalize rounded-full">find your freelance</button>
+              </Link>
+            </div>
           </div>
           <div className="grow flex justify-center">
             <img className="max-h-full" src="/images/hello-sigap.png" alt="hello" />
           </div>
         </section>
 
-        <section className="bg-white flex justify-evenly shadow-lg">
-          <div className="flex flex-col items-center w-48 text-center gap-1 py-4">
-            <div className="p-2"><img className="max-w-[5rem]" src="/images/icon-lock.png" alt="lock" /></div>
+        <section className="w-full bg-white flex justify-evenly shadow-lg py-4 2xl:py-8">
+          <div className="flex flex-col items-center w-48 text-center gap-1">
+            <div className="p-2"><img className="max-w-[5rem] 2xl:max-w-[8rem]" src="/images/icon-lock.png" alt="lock" /></div>
             <div className="font-lato font-bold capitalize text-2xl">create account</div>
             <div className="text-sigap-abu">First you have to create a account here</div>
           </div>
-          <div className="flex flex-col items-center w-48 text-center gap-1 py-4">
-            <div className="p-2"><img className="max-w-[5rem]" src="/images/icon-search.png" alt="lock" /></div>
+          <div className="flex flex-col items-center w-48 text-center gap-1">
+            <div className="p-2"><img className="max-w-[5rem] 2xl:max-w-[8rem]" src="/images/icon-search.png" alt="lock" /></div>
             <div className="font-lato font-bold capitalize text-2xl">create account</div>
             <div className="text-sigap-abu">First you have to create a account here</div>
           </div>
-          <div className="flex flex-col items-center w-48 text-center gap-1 py-4">
-            <div className="p-2"><img className="max-w-[5rem]" src="/images/icon-guard.png" alt="lock" /></div>
+          <div className="flex flex-col items-center w-48 text-center gap-1">
+            <div className="p-2"><img className="max-w-[5rem] 2xl:max-w-[8rem]" src="/images/icon-guard.png" alt="lock" /></div>
             <div className="font-lato font-bold capitalize text-2xl">create account</div>
             <div className="text-sigap-abu">First you have to create a account here</div>
           </div>
         </section>
 
-        <section className="min-h-screen pt-12 flex flex-col justify-center">
+        <section className="w-full flex flex-row justify-between" data-aos="fade-up">
+          <div className="">
+            <img className="max-w-[18rem]" src="/images/girl-landing.png" alt="landing girl" />
+          </div>
+          <div className="w-4/12 text-right">
+            <div className="font-lato font-bold text-5xl 2xl:text-6xl">Find The Best <span className="text-sigap-ijo">Freelancers</span> Here</div>
+          </div>
+        </section>
+
+        <section className="w-full flex flex-col items-center gap-8">
+          <div className="font-lato font-bold text-4xl">Our Service</div>
+          <div className="flex flex-row gap-16">
+            <div className="w-80 h-80 shadow-lg p-4 flex flex-col justify-between hover:bg-sigap-ijo hover:text-white transition duration-300 ease-in-out cursor-pointer"
+            data-aos="fade-up"
+            >
+              <div className="self-end">icon</div>
+              <div className="grow flex items-center justify-center">
+                <img className="bg-green-300 rounded-full w-48" src="/images/SigapBot1.png" alt="sigapbot" />
+              </div>
+              <div className="font-lato font-medium text-4xl text-center">Custom Request</div>
+            </div>
+            <div className="w-80 h-80 shadow-lg p-4 flex flex-col justify-between hover:bg-sigap-ijo hover:text-white transition duration-300 ease-in-out cursor-pointer"
+            data-aos="fade-up"
+            data-aos-delay="250"
+            >
+              <div className="self-end">icon</div>
+              <div className="grow flex items-center justify-center">
+                <img className="bg-green-300 rounded-full w-48" src="/images/SigapBot1.png" alt="sigapbot" />
+              </div>
+              <div className="font-lato font-medium text-4xl text-center">Instant Order</div>
+            </div>
+            <div className="w-80 h-80 shadow-lg p-4 flex flex-col justify-between hover:bg-sigap-ijo hover:text-white transition duration-300 ease-in-out cursor-pointer"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            >
+              <div className="self-end">icon</div>
+              <div className="grow flex items-center justify-center">
+                <img className="bg-green-300 rounded-full w-48" src="/images/SigapBot1.png" alt="sigapbot" />
+              </div>
+              <div className="font-lato font-medium text-4xl text-center">Main Profile</div>
+            </div>
+          </div>
+        </section>
+
+        <form className="flex flex-col bg-gradient-to-br from-sigap-ijo to-white items-center w-screen p-24 gap-8" onSubmit={(e) => { e.preventDefault(); console.log('Success') }}>
+          <div className="font-lato font-bold text-6xl">Newsletter Subscription</div>
+          <div className="text-gray-500 text-2xl mb-12">Subscribe to our newsletter to get new freelance work and projects</div>
+          <input className="rounded-full shadow-md px-32 py-4 text-2xl" type="text" placeholder="Enter your email address" />
+          <button className="bg-sigap-ijo text-white font-bold text-2xl px-16 py-4 rounded-full" type="submit">Subscribe</button>
+        </form>
+
+        <section className="h-16"></section>
+        {/* <section className="min-h-screen pt-12 flex flex-col justify-center">
           <div className="italic text-xl text-hijau-tua mx-auto w-fit mt-24 mb-8 font-bold">Stand With Local</div>
           <div className="bg-hitam text-putih flex flex-row justify-between">
             <div className="p-12 shrink w-7/12 flex justify-between flex-col">
@@ -77,8 +138,6 @@ export default function Home() {
           <div className="inset-0 bg-hitam opacity-75 absolute">
           </div>
           <div className="absolute top-0 left-0 right-0 p-24 flex flex-col justify-center items-start h-full gap-12">
-            {/* <div className="bg-hijau-tua text-putih px-4 py-2 uppercase font-bold text-3xl">freelance sigap</div>
-              <div className=" text-abuabu text-2xl text-center">Freelance Sigap sebagai startup yang mengusung nilai efisiensi. Freelance Sigap hadir untuk menyederhanakan dan mempraktiskan kerja serta kebutuhan zaman. Hal ini dimunculkan untuk membuat lingkup positif dalam transaksional.</div> */}
             <div className="font-lato font-bold text-abuabu text-6xl leading-loose">
               Efficiency Value.<br />Make it simple and practical.<br />Positive Transactional.
             </div>
@@ -185,7 +244,7 @@ export default function Home() {
               Maintenance<br />Social Networking
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </div>
