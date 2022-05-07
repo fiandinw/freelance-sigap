@@ -45,7 +45,7 @@ function Dashboard() {
                 <button className="rounded-[100%] w-16 h-16 shadow-lg p-4 hover:bg-sigap-ijo text-center text-sigap-ijo hover:text-white"><i className="fa fa-arrow-right fa-lg" aria-hidden="true"></i></button>
               </div>
             </div>
-            
+
             <div className="w-full grid grid-cols-3 gap-8 h-96 2xl:h-[32rem]">
               <div className="grid grid-row-3 rounded-3xl shadow-lg p-8 w-full min-h-full">
                 <div className="flex items-center justify-center">Icon</div>
@@ -76,7 +76,7 @@ function Dashboard() {
                   <button className="text-white bg-sigap-ijo px-6 p-2 rounded-full">Apply Now</button>
                 </div>
               </div>
-              
+
               <div className="grid grid-row-3 rounded-3xl shadow-lg p-8 w-full min-h-full">
                 <div className="flex items-center justify-center">Icon</div>
                 <div className="text-center">
@@ -95,12 +95,35 @@ function Dashboard() {
             </div>
           </section>
 
-          <section className="bg-sigap-ijo w-full">
-            Choose Diferent Category
+          <section className="w-full flex flex-col items-center gap-14">
+            <div className="font-lato font-bold text-5xl">Choose Diferent <span className="text-sigap-ijo">Category</span></div>
+            <div className="grid grid-cols-4 w-full gap-8">
+              <div className="relative bg-putih w-full h-auto aspect-square rounded-xl overflow-hidden">
+                <img className="absolute object-contain" src="https://picsum.photos/500" alt="foto" />
+                <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
+                <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
+              </div>
+              <div className="relative bg-putih w-full h-auto aspect-square rounded-lg overflow-hidden">
+                <img className="absolute object-contain" src="https://picsum.photos/500" alt="foto" />
+                <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
+                <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
+              </div>
+              <div className="relative bg-putih w-full h-auto aspect-square rounded-lg overflow-hidden">
+                <img className="absolute object-contain" src="https://picsum.photos/500" alt="foto" />
+                <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
+                <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
+              </div>
+              <div className="relative bg-putih w-full h-auto aspect-square rounded-lg overflow-hidden">
+                <img className="absolute object-contain" src="https://picsum.photos/500" alt="foto" />
+                <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
+                <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
+              </div>
+            </div>
           </section>
 
-          <section className="bg-sigap-ijo w-full">
-            Checkout The Best Portfolios Here
+          <section className="w-full flex flex-col items-center">
+            <div className="font-lato text-2xl text-gray-400">Logos, websites, book covers & more!</div>
+            <div className="font-lato font-bold text-5xl">Checkout The Best <span className="text-sigap-ijo">Portfolios</span> Here</div>
           </section>
 
           <form className="flex flex-col bg-gradient-to-br from-sigap-ijo to-white items-center w-screen p-24 gap-8" onSubmit={(e) => { e.preventDefault(); console.log('Success') }}>
