@@ -16,7 +16,7 @@ function HeadNav(props) {
           <div className="flex items-center gap-8">
             <div className="capitalize font-bold cursor-pointer">home</div>
             <div className="capitalize cursor-pointer">about</div>
-            <div className="uppercase cursor-pointer">faq</div>
+            <div className="uppercase cursor-pointer"><a href="#faqsection">faq</a></div>
             <div className="capitalize cursor-pointer">description</div>
             <div className="capitalize cursor-pointer">support center</div>
             <div className="capitalize cursor-pointer">terms and conditions</div>
@@ -34,8 +34,36 @@ function HeadNav(props) {
         </nav>
       </header>
     ) : (
-      <header className="fixed top-0 w-screen z-50 px-16 2xl:px-32 py-8 bg-white">
-        <div className="bg-red-500">asd</div>
+      <header className="fixed top-0 w-screen z-50 bg-white">
+        <div className="flex flex-row justify-between py-8 px-24 2xl:px-32">
+          <Link href="/" passHref>
+            <div className="flex flex-row items-center gap-2 cursor-pointer">
+              <img className="w-8 h-8" src="/images/logogram.png" alt="logogram" />
+              <div className="font-lato font-extrabold"><span className="text-sigap-ijo">Freelance</span> Sigap</div>
+            </div>
+          </Link>
+          <div className="flex items-center">search</div>
+          <div className="flex flex-row gap-8 font-lato items-center">
+            <div className="font-bold">Home</div>
+            <div>Price List</div>
+            <div>My List</div>
+            <div>My Order</div>
+            <div>My Claim</div>
+          </div>
+          <div className="flex flex-row gap-4 items-center">
+            <div><i className="fa fa-bell fa-lg text-sigap-ijo" aria-hidden="true"></i></div>
+            <div><i className="fa fa-user-circle fa-2x" aria-hidden="true"></i></div>
+          </div>
+        </div>
+        <div className="border-y-2 w-screen px-16 2xl:px-32 py-2 flex flex-row justify-between">
+          <div>Category</div>
+          <div>Category</div>
+          <div>Category</div>
+          <div>Category</div>
+          <div>Category</div>
+          <div>Category</div>
+          <div>Category</div>
+        </div>
       </header>
     )
   )

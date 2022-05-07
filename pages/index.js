@@ -67,6 +67,20 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="relative h-screen w-screen">
+          <video className="absolute h-full w-full object-cover" autoPlay muted loop>
+            <source src="/videos/final.mp4" type="video/mp4" />
+            Video cant be played
+          </video>
+          <div className="inset-0 bg-hitam opacity-50 absolute">
+          </div>
+          <div className="absolute top-0 left-0 right-0 p-24 flex flex-col justify-center items-start h-full gap-12">
+            <div className="font-lato font-bold text-abuabu text-6xl leading-loose">
+              Efficiency Value.<br />Make it simple and practical.<br />Positive Transactional.
+            </div>
+          </div>
+        </section>
+
         <section className="w-full flex flex-col items-center gap-8">
           <div className="font-lato font-bold text-4xl">Our Service</div>
           <div className="flex flex-row gap-16">
@@ -100,6 +114,107 @@ export default function Home() {
               <div className="font-lato font-medium text-4xl text-center">Main Profile</div>
             </div>
           </div>
+        </section>
+
+        <section className="flex flex-col items-center justify-center p-4 gap-8">
+          <div className="font-lato font-bold text-4xl">
+            Kategori
+          </div>
+          <div className="flex gap-4">
+            <div className="relative bg-putih w-[300px] h-[200px]"
+             data-aos="fade-up"
+            >
+              <img className="absolute" src="https://picsum.photos/300/200" alt="foto" />
+              <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
+              <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
+            </div>
+            <div className="relative bg-putih w-[300px] h-[200px]"
+             data-aos="fade-up"
+            >
+              <img className="absolute" src="https://picsum.photos/300/200" alt="foto" />
+              <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
+              <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
+            </div>
+            <div className="relative bg-putih w-[300px] h-[200px]"
+             data-aos="fade-up"
+            >
+              <img className="absolute" src="https://picsum.photos/300/200" alt="foto" />
+              <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
+              <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
+            </div>
+            <div className="relative bg-putih w-[300px] h-[200px]"
+             data-aos="fade-up"
+            >
+              <img className="absolute" src="https://picsum.photos/300/200" alt="foto" />
+              <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
+              <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faqsection" className="relative flex flex-col items-center justify-center gap-4">
+          <div className="font-lato font-bold text-4xl uppercase">faq</div>
+          <FaqAccordion
+            title="Apa keunggulan menggunakan Freelance Sigap?"
+            description="Kami memegang erat pada konsep efisiensi waktu dan harga. Selain itu profesionalitas freelancer dijunjung tinggi dan kami bertekad untuk menghadirkan fitur custom order untuk memberi ruang kepada freelancer kelas newbie untuk menjemput order calon customer juga kepada customer untuk bebas menentukan budget di fitur ini."
+          />
+          <FaqAccordion
+            title="Ada berapa cara order di Freelance Sigap?"
+            description="Terdapat 2 cara order, yakni Instan Order dan Custom Order."
+          />
+          <FaqAccordion
+            title="Bagaimana cara order di Freelance Sigap?"
+            description="1. Pada Instan Order, calon customer harus melakukan login atau sign up terlebih dahulu, kemudian nanti mengisi e-formulir yang sudah tersedia, harga jasa menyesuaikan jenis jasa, kualitas atau kelas freelancer, dan kecepatan pengerjaan. 
+2. Pada Custom Order, calon customer tidak perlu login atau signup terlebih dahulu, dan calon customer bebas menentukan budget untuk membayar jasa freelancer."
+          />
+          <FaqAccordion
+            title="Apakah di Freelance Sigap terdapat fitur negosiasi?"
+            description="Ya, fitur tersebut bernama Chat and Nego."
+          />
+          <FaqAccordion
+            title="Apakah di Freelance Sigap dapat mencicil?"
+            description="Ya, ada metode pembayaran mencicil sebanyak 2 kali. Termin 1 membayar sebesar minimal 20%. Termin 2 membayar sisa dari pembayaran termin 1. Metode pembayaran ini berlaku untuk custom order saja."
+          />
+          <FaqAccordion
+            title="Apakah di Freelance Sigap dapat CoD?"
+            description="Ya, ada metode pembayaran Cash on Delivery untuk calon customer yang tidak memiliki E-Wallet/Bank/Debit dan dapat dijangkau jaraknya. Untuk Cash on Delivery terdapat biaya penanganan sebesar Rp 5.000."
+          />
+          <FaqAccordion
+            title="Bagaimana ketentuan transaksi di Freelance Sigap?"
+            description="Calon customer harus memperhatikan syarat dan ketentuan order yang tertera pada Terms and Condition sebelum melakukan order. Semua bentuk persetujuan dari calon customer dianggap sebagai hal yang absah. Terkait kebijakan pembatalan order dari calon customer merupakan tanggung jawab dari calon customer, jika sebaliknya di tengah proyek berjalan dari pihak freelancer terdapat keterlambatan, maka calon customer dapat mengklaim garansi berupa uang kembali 100% atau proyek dialihkan kepada freelancer lain."
+          />
+          <FaqAccordion
+            title="Bagaimana cara klaim garansi?"
+            description="Calon customer harus melakukan login atau signup terlebih dahulu. Di sebelah profile calon customer terdapat My Claim dan di sana akan diarahkan kepada support center untuk teknis klaim. Jika calon customer tidak membuat akun, maka klaim garansi tidak berlaku kecuali memiliki rekam jejak transaksi."
+          />
+          <FaqAccordion
+            title="Apakah di Freelance Sigap terdapat voucher diskon?"
+            description="Ya. Voucher diskon didapatkan dari mengisi review feedback setelah order dan event-event Freelance Sigap."
+          />
+          <FaqAccordion
+            title="Bagaimana cara klaim voucher diskon?"
+            description="Calon customer dapat mengklaim voucher diskon di My Claim, kemudian voucher dapat digunakan sesuai dengan ketentuannya."
+          />
+          <FaqAccordion
+            title="Bagaimana jika ingin menambah fitur atau request di tengah proyek?"
+            description="Jika terdapat request di tengah berjalannya proyek, hal tersebut diukur oleh bobot permintaan. Jika permintaannya dalam kategori besar, dimungkinkan freelancer akan memberi tagihan pembayaran tambahan. Jika permintaannya hanya sebagian kecil, dimungkinkan freelancer memberi free paid."
+          />
+          <FaqAccordion
+            title="Berapa harga untuk membeli jasa di Freelance Sigap?"
+            description="Rate harga di Freelance Sigap mulai dari Rp 15.000"
+          />
+          <FaqAccordion
+            title="Berapa lama proyek yang dikerjakan di Freelance Sigap?"
+            description="Pengerjaan proyek tergantung pada jenis dan sub jenis jasa serta pemilihan fitur kecepatan pengerjaan, apabila Sigap merupakan fitur pengerjaan reguler, dan Super Sigap merupakan fitur pengerjaan cepat."
+          />
+          <FaqAccordion
+            title="Apakah menambah permintaan revisi menambah biaya di Freelance Sigap?"
+            description="Ya, biaya revisi dihitung Rp 20.000/permintaan."
+          />
+          <FaqAccordion
+            title="Apa yang didapat setelah proyek selesai?"
+            description="Calon customer akan mendapatkan voucher diskon, juga customer memiliki tingkatan customer yang dimana akan mempengaruhi harga dan cashback pembelian jasa."
+          />
         </section>
 
         <form className="flex flex-col bg-gradient-to-br from-sigap-ijo to-white items-center w-screen p-24 gap-8" onSubmit={(e) => { e.preventDefault(); console.log('Success') }}>

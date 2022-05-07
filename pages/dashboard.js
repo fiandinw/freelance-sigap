@@ -6,10 +6,43 @@ import HeadNav from "../components/HeadNav";
 function Dashboard() {
   return (
     <>
-      <div className="bg-abuabu min-h-screen font-lato">
-        <HeadNav warnaBg='bg-putih' login/>
+      <div className=" min-h-screen font-lato">
+        <HeadNav warnaBg='bg-putih' login />
         <main className="pt-48 pb-32 px-8 flex flex-row">
-          <div className="w-56"></div>
+          <section className="w-full flex flex-col items-center gap-8">
+            <div className="flex flex-row gap-16">
+              <div className="w-80 h-80 shadow-lg p-4 flex flex-col justify-between hover:bg-sigap-ijo hover:text-white transition duration-300 ease-in-out cursor-pointer"
+                data-aos="fade-up"
+              >
+                <div className="self-end">icon</div>
+                <div className="grow flex items-center justify-center">
+                  <img className="bg-green-300 rounded-full w-48" src="/images/SigapBot1.png" alt="sigapbot" />
+                </div>
+                <div className="font-lato font-medium text-4xl text-center">Custom Request</div>
+              </div>
+              <div className="w-80 h-80 shadow-lg p-4 flex flex-col justify-between hover:bg-sigap-ijo hover:text-white transition duration-300 ease-in-out cursor-pointer"
+                data-aos="fade-up"
+                data-aos-delay="250"
+              >
+                <div className="self-end">icon</div>
+                <div className="grow flex items-center justify-center">
+                  <img className="bg-green-300 rounded-full w-48" src="/images/SigapBot1.png" alt="sigapbot" />
+                </div>
+                <div className="font-lato font-medium text-4xl text-center">Instant Order</div>
+              </div>
+              <div className="w-80 h-80 shadow-lg p-4 flex flex-col justify-between hover:bg-sigap-ijo hover:text-white transition duration-300 ease-in-out cursor-pointer"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <div className="self-end">icon</div>
+                <div className="grow flex items-center justify-center">
+                  <img className="bg-green-300 rounded-full w-48" src="/images/SigapBot1.png" alt="sigapbot" />
+                </div>
+                <div className="font-lato font-medium text-4xl text-center">Main Profile</div>
+              </div>
+            </div>
+          </section>
+          {/* <div className="w-56"></div>
           <div className="grow flex justify-center items-center flex-col gap-24">
             <div className="text-5xl uppercase font-bold text-hijau-dark">freelance sigap</div>
             <div className="flex flex-row gap-8">
@@ -41,7 +74,7 @@ function Dashboard() {
                 <Link href='/status' passHref><button className="bg-hijau-med-dark w-full text-xl uppercase font-semibold p-2 rounded-lg">check</button></Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </main>
 
         <Footer />
