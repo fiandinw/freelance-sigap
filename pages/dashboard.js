@@ -60,7 +60,7 @@ function Dashboard() {
                     <div className="font-semibold text-gray-400">Start from</div>
                     <div className="text-sigap-ijo">Rp <span className="font-black text-2xl">250.000</span></div>
                   </div>
-                  <button className="text-white bg-sigap-ijo px-6 p-2 rounded-full">Apply Now</button>
+                  <Link href="/deskripsi/logo" passHref><button className="text-white bg-sigap-ijo px-6 p-2 rounded-full">Apply Now</button></Link>
                 </div>
               </div>
 
@@ -73,9 +73,9 @@ function Dashboard() {
                 <div className="flex flex-row w-full items-end justify-between">
                   <div className="text-center">
                     <div className="font-semibold text-gray-400">Start from</div>
-                    <div className="text-sigap-ijo">Rp <span className="font-black text-2xl">250.000</span></div>
+                    <div className="text-sigap-ijo">Rp <span className="font-black text-2xl">250</span>.000</div>
                   </div>
-                  <button className="text-white bg-sigap-ijo px-6 p-2 rounded-full">Apply Now</button>
+                  <Link href="/deskripsi/grafis" passHref><button className="text-white bg-sigap-ijo px-6 p-2 rounded-full">Apply Now</button></Link>
                 </div>
               </div>
 
@@ -90,7 +90,7 @@ function Dashboard() {
                     <div className="font-semibold text-gray-400">Start from</div>
                     <div className="text-sigap-ijo">Rp <span className="font-black text-2xl">250.000</span></div>
                   </div>
-                  <button className="text-white bg-sigap-ijo px-6 p-2 rounded-full">Apply Now</button>
+                  <Link href="/deskripsi/SEO" passHref><button className="text-white bg-sigap-ijo px-6 p-2 rounded-full">Apply Now</button></Link>
                 </div>
               </div>
 

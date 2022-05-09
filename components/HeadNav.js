@@ -58,7 +58,9 @@ function HeadNav(props) {
           </Link>
           <div className="flex items-center">search</div>
           <div className="flex flex-row gap-8 font-lato items-center">
-            <div className="font-bold">Home</div>
+            <Link href="/dashboard" passHref>
+              <div className="font-bold cursor-pointer">Home</div>
+            </Link>
             <div>Price List</div>
             <div>My List</div>
             <div>My Order</div>
