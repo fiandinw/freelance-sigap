@@ -54,15 +54,15 @@ function Login() {
                 </div>
                 <div className="flex flex-row border-hijau-black border-2 rounded-lg ">
                   <span className="w-12 p-2 text-center"><i className="fa fa-envelope-o fa-lg" aria-hidden="true"></i></span>
-                  <input className="bg-hijau-tua grow focus:outline-none" type="text" name="" id="" placeholder="" />
+                  <input className="bg-hijau-tua grow focus:outline-none" type="text" name="email" id="email" placeholder="" />
                 </div>
                 <div className="flex flex-row border-hijau-black border-2 bg-hijau-dark rounded-lg ">
                   <span className="w-12 p-2 text-center"><i className="fa fa-user-o fa-lg" aria-hidden="true"></i></span>
-                  <input className="bg-hijau-dark grow focus:outline-none" type="text" name="" id="" />
+                  <input className="bg-hijau-dark grow focus:outline-none" type="text" name="user" id="user" />
                 </div>
                 <div className="flex flex-row border-hijau-black border-2 rounded-lg ">
                   <span className="w-12 p-2 text-center"><i className="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                  <input className="bg-hijau-tua grow focus:outline-none" type="password" name="" id="" />
+                  <input className="bg-hijau-tua grow focus:outline-none" type="password" name="password" id="password" />
                 </div>
                 <div>
                   <input type="checkbox" name="agree" id="agree" />
