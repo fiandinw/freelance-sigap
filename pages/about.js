@@ -4,8 +4,8 @@ import Link from "next/link";
 
 function Products() {
   return (
-    <div className="bg-abuabu min-h-screen font-lato">
-      <HeadNav warnaBg='bg-putih' />
+    <div className="bg-abuabu min-h-screen">
+      <HeadNav type="landing" />
       <main className="pt-32 pb-32 px-8 flex flex-col min-h-screen gap-8">
         <div>
           <h1 className="text-4xl text-center uppercase text-hijau-tua font-bold mb-8">about</h1>

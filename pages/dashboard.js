@@ -7,7 +7,7 @@ function Dashboard() {
   return (
     <>
       <div className=" min-h-screen font-lato">
-        <HeadNav warnaBg='bg-putih' login />
+        <HeadNav/>
         <main className="pt-48 pb-32 px-28 2xl:px-32 flex flex-col gap-24 items-center">
 
           <section className="w-full flex flex-row items-center justify-evenly">

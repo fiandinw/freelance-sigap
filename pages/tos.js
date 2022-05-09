@@ -5,7 +5,7 @@ import Link from "next/link";
 function Products() {
   return (
     <div className="bg-abuabu min-h-screen font-lato">
-      <HeadNav warnaBg='bg-putih' />
+      <HeadNav type="landing"/>
       <main className="pt-32 pb-32 px-12 flex flex-col min-h-screen gap-8">
         <h1 className="text-2xl">Syarat dan Ketentuan</h1>
         <ol className="list-decimal pl-4">

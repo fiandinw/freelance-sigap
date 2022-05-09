@@ -1,25 +1,39 @@
 import Image from "next/image"
 import Link from "next/link";
+import { useRouter } from 'next/router'
 
 function HeadNav(props) {
+  const router = useRouter()
   return (
     props.type === 'landing' ? (
       // px di header menentukan layout keselruhan
       <header className="fixed top-0 w-screen z-50 px-16 2xl:px-32 py-8">
         <nav className="bg-white flex flex-row items-center justify-between rounded-full px-4 py-2 shadow-lg">
 
-          <div className="flex items-center gap-2 cursor-pointer">
-            <img className="w-8" src="/images/logogram.png" alt="logogram" />
-            <div className="capitalize font-lato"><span className="font-extrabold text-sigap-ijo">freelance</span> <span className="font-bold">sigap</span></div>
-          </div>
+          <Link href="/" passHref>
+            <div className="flex items-center gap-2 cursor-pointer">
+              <img className="w-8" src="/images/logogram.png" alt="logogram" />
+              <div className="capitalize font-lato"><span className="font-extrabold text-sigap-ijo">freelance</span> <span className="font-bold">sigap</span></div>
+            </div>
+          </Link>
 
           <div className="flex items-center gap-8">
-            <div className="capitalize font-bold cursor-pointer">home</div>
-            <div className="capitalize cursor-pointer">about</div>
-            <div className="uppercase cursor-pointer"><a href="#faqsection">faq</a></div>
+            <Link href="/" passHref>
+              <div className="capitalize font-bold cursor-pointer">home</div>
+            </Link>
+            <Link href="/about" passHref>
+              <div className="capitalize cursor-pointer">about</div>
+            </Link>
+            <div className="uppercase cursor-pointer">
+              {router.pathname != '/' ? <Link href="/#faqsection" passHref>faq</Link> : <a href="#faqsection">faq</a>}
+            </div>
             <div className="capitalize cursor-pointer">description</div>
-            <div className="capitalize cursor-pointer">support center</div>
-            <div className="capitalize cursor-pointer">terms and conditions</div>
+            <Link href="/support-center" passHref>
+              <div className="capitalize cursor-pointer">support center</div>
+            </Link>
+            <Link href="/tos" passHref>
+              <div className="capitalize cursor-pointer">terms and conditions</div>
+            </Link>
           </div>
 
           <div className="flex items-center gap-2">
