@@ -27,26 +27,26 @@ function Order() {
 
   return (
     <>
-      <div className="bg-abuabu min-h-screen font-lato">
+      <div className="bg-white min-h-screen font-lato">
         <HeadNav warnaBg='bg-putih' login/>
-        <main className="pt-32 pb-12">
+        <main className="pt-48 pb-12">
           <form onSubmit={handleSubmit} className="flex flex-col w-screen items-center px-32 gap-4">
-            <div className="text-hijau-tua uppercase font-bold text-4xl">Custom Order</div>
+            <div className="text-hijau-tua uppercase font-bold text-4xl">Custom Request</div>
             <div className="w-full">
               <label className="text-hijau-tua font-semibold text-xl" htmlFor="nama">Nama</label>
-              <input className="w-full border-hijau-tua border-2 rounded-md bg-abuabu px-3 py-1 text-hijau-black focus:outline-none" id="nama" name="nama" type="text" placeholder="Masukan Nama Anda" />
+              <input className="w-full border-hijau-tua border-2 rounded-md bg-white px-3 py-1 text-hijau-black focus:outline-none" id="nama" name="nama" type="text" placeholder="Masukan Nama Anda" />
             </div>
             <div className="w-full">
               <label className="text-hijau-tua font-semibold text-xl" htmlFor="email">Alamat E-Mail</label>
-              <input className="w-full border-hijau-tua border-2 rounded-md bg-abuabu px-3 py-1 text-hijau-black focus:outline-none" id="email" name="email" type="text" placeholder="Masukan Email Anda" />
+              <input className="w-full border-hijau-tua border-2 rounded-md bg-white px-3 py-1 text-hijau-black focus:outline-none" id="email" name="email" type="text" placeholder="Masukan Email Anda" />
             </div>
             <div className="w-full">
               <label className="text-hijau-tua font-semibold text-xl" htmlFor="telepon">Nomor Telepon</label>
-              <input className="w-full border-hijau-tua border-2 rounded-md bg-abuabu px-3 py-1 text-hijau-black focus:outline-none" id="telepon" name="telepon" type="number" placeholder="Masukan Nomor Telepon Anda (+62)" />
+              <input className="w-full border-hijau-tua border-2 rounded-md bg-white px-3 py-1 text-hijau-black focus:outline-none" id="telepon" name="telepon" type="number" placeholder="Masukan Nomor Telepon Anda (+62)" />
             </div>
             <div className="w-full">
               <label className="text-hijau-tua font-semibold text-xl" htmlFor="description">Description Box</label>
-              <textarea className="w-full border-hijau-tua border-2 rounded-md bg-abuabu px-3 py-1 text-hijau-black focus:outline-none" name="description" id="description"></textarea>
+              <textarea className="w-full border-hijau-tua border-2 rounded-md bg-white px-3 py-1 text-hijau-black focus:outline-none" name="description" id="description"></textarea>
             </div>
             <div className="w-full">
             <div className="text-hijau-tua font-semibold text-xl" htmlFor="description">Attach Files</div>
@@ -123,18 +123,18 @@ function Order() {
                 )}
               </select>
             </div>
-            <div className="w-full">
+            {/* <div className="w-full">
               <label className="text-hijau-tua font-semibold text-xl" htmlFor="estimasi">Estimasi Pengerjaan</label>
               <select className="w-full border-hijau-tua border-2 rounded-md bg-hijau-tua px-3 py-1 text-putih focus:outline-none" name="estimasi" id="estimasi">
                 <option value="1">1</option>
                 <option value="2">2</option>
               </select>
-            </div>
+            </div> */}
             <div className="w-full">
               <label className="text-hijau-tua font-semibold text-xl" htmlFor="budget">Estimasi Budget</label>
-              <input className="w-full border-hijau-tua border-2 rounded-md bg-abuabu px-3 py-1 text-hijau-black focus:outline-none" id="budget" name="budget" type="text" placeholder="Estimasi Budget" />
+              <input className="w-full border-hijau-tua border-2 rounded-md bg-white px-3 py-1 text-hijau-black focus:outline-none" id="budget" name="budget" type="number" placeholder="Estimasi Budget (Rp)" />
             </div>
-            <div className="w-full">
+            <div className="w-full mt-16">
               <p className="font-bold">Petunjuk, Syarat dan Ketentuan</p>
               <ol className="list-decimal pl-4">
                 <li>Pastikan data yang Anda input pada form e-order sudah benar dan sesuai.</li>
