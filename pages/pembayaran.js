@@ -3,14 +3,16 @@ import HeadNav from "../components/HeadNav";
 import Sticky from "react-sticky-el";
 import Link from "next/link";
 
-export default function OrderDetail() {
+export default function Pembayaran() {
   return (
     <>
       <HeadNav />
       <main className="pt-44 pb-32 px-28 2xl:px-32">
         <div className="flex gap-12">
-          <div className="text-sigap-ijo font-semibold">Order Detail</div>
-          <Link href="/order-detail" passHref><div>Pembayaran</div></Link>
+          <Link href="/order-detail" passHref>
+            <div>Order Detail</div>
+          </Link>
+          <div  className="text-sigap-ijo font-semibold">Pembayaran</div>
         </div>
 
         <div className="flex flex-row">
@@ -36,7 +38,7 @@ export default function OrderDetail() {
                 <div className="text-xl font-bold text-sigap-ijo">X Hari</div>
               </div>
               <div className="border-[1px] border-gray-300 my-6"></div>
-              <Link href="/pembayaran" passHref><button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">Bayar</button></Link>
+              <button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">Bayar</button>
               <div className="mt-2 text-center">Anda belum akan dikenakan biaya</div>
             </div>
           </Sticky>

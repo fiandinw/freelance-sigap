@@ -23,7 +23,7 @@ function Deskripsi() {
         <div className="flex flex-row gap-8">
           <div className="w-8/12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus similique commodi repellendus iste nobis neque, ex culpa pariatur quam est accusantium sequi deleniti placeat rerum temporibus autem quaerat esse incidunt. Excepturi repudiandae ab fugiat laborum perspiciatis natus! Eum nulla quasi error accusantium quisquam voluptates in quidem, dolore, praesentium, porro necessitatibus excepturi non. Soluta ullam perferendis officia cupiditate vero veniam repellendus accusantium ipsum? Ipsum accusantium dicta voluptates omnis qui impedit tempore, voluptatibus odit inventore quod consectetur libero asperiores beatae nostrum tempora eum, nemo facere? Odit suscipit doloribus sint sapiente repellendus numquam quasi. Eaque inventore labore necessitatibus ratione quam repellendus nisi.</div>
           <Sticky className="w-4/12 relative">
-            <div className="shadow-xl flex flex-col">
+            <div className="shadow-xl flex flex-col ml-4">
               <div className="grid grid-cols-3">
                 <div className="flex py-6 font-semibold items-center justify-center border-b-4 border-sigap-ijo text-sigap-ijo">XXX Rb</div>
                 <div className="flex py-6 font-semibold items-center justify-center bg-gray-400 text-white">XXX Rb</div>
