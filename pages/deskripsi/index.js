@@ -17,7 +17,7 @@ function Deskripsi() {
         </div>
 
         <div className="text-sigap-ijo text-3xl uppercase">
-          {id}
+          Judul Detail {id}
         </div>
 
         <div className="flex flex-row gap-8">

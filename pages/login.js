@@ -36,64 +36,95 @@ function Login() {
   }
   return (
     <>
-      <div className="bg-abuabu min-h-screen font-lato">
-        <div className="flex flex-row min-h-screen items-center">
-          <form ref={formRef} onSubmit={handleLogin} className="w-5/12 px-12 py-8 self-stretch">
-            <div className="bg-hijau-tua rounded-3xl text-putih p-8 h-full flex flex-col justify-between">
-              <div>I - DEPTHRIVE | Stand With Local</div>
-              <div className="font-bold">Telah memiliki 500 juta pengguna di seluruh Dunia (contohnya)</div>
-              <div className="flex flex-col gap-4">
-                <div>
-                  <button type="button" className="py-2 px-4 flex justify-center items-center bg-merah hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
-                    <svg width="20" height="20" fill="currentColor" className="mr-2" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M896 786h725q12 67 12 128 0 217-91 387.5t-259.5 266.5-386.5 96q-157 0-299-60.5t-245-163.5-163.5-245-60.5-299 60.5-299 163.5-245 245-163.5 299-60.5q300 0 515 201l-209 201q-123-119-306-119-129 0-238.5 65t-173.5 176.5-64 243.5 64 243.5 173.5 176.5 238.5 65q87 0 160-24t120-60 82-82 51.5-87 22.5-78h-436v-264z">
-                      </path>
-                    </svg>
-                    Sign in with Google
-                  </button>
-                </div>
-                <div className="flex flex-row border-hijau-black border-2 rounded-lg ">
-                  <span className="w-12 p-2 text-center"><i className="fa fa-envelope-o fa-lg" aria-hidden="true"></i></span>
-                  <input className="bg-hijau-tua grow focus:outline-none" type="text" name="email" id="email" placeholder="" />
-                </div>
-                <div className="flex flex-row border-hijau-black border-2 bg-hijau-dark rounded-lg ">
-                  <span className="w-12 p-2 text-center"><i className="fa fa-user-o fa-lg" aria-hidden="true"></i></span>
-                  <input className="bg-hijau-dark grow focus:outline-none" type="text" name="user" id="user" />
-                </div>
-                <div className="flex flex-row border-hijau-black border-2 rounded-lg ">
-                  <span className="w-12 p-2 text-center"><i className="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                  <input className="bg-hijau-tua grow focus:outline-none" type="password" name="password" id="password" />
-                </div>
-                <div>
-                  <input type="checkbox" name="agree" id="agree" />
-                  <label htmlFor="agree">Saya Menyetujui Syarat dan Ketentuan yang Berlaku</label>
-                </div>
-              </div>
-              <button type="submit" className="uppercase bg-hijau-dark w-full p-4 rounded-xl font-bold text-abuabu hover:text-putih">
-                masuk
-              </button>
-              <div>
-                Tidak Memiliki Akun? <span className="text-biru cursor-pointer">Buat Akun</span>
-              </div>
+      <div className="flex h-screen w-screen items-center justify-center">
+        <div className="shadow-xl flex items-center">
+          <div>
+            <div className="flex items-center gap-2 cursor-pointer">
+              <img className="w-8" src="/images/logogram.png" alt="logogram" />
+              <div className="capitalize font-lato"><span className="font-extrabold text-sigap-ijo">freelance</span> <span className="font-bold">sigap</span></div>
             </div>
-          </form>
-          <div className="grow h-screen py-24 pr-20 flex flex-col justify-between">
-            <Link href='/' passHref>
-              <div ref={backRef} className="self-end pb-12 cursor-pointer font-bold text-hijau-tua">
-                <i className="fa fa-home fa-2x" aria-hidden="true"></i> Kembali ke Beranda
-              </div>
-            </Link>
-            <div className="grow">
-              <div ref={titleRef} className="uppercase text-hijau-tua text-7xl font-extrabold">freelance sigap</div>
-              <div ref={subTitleRef} className="text-hijau-tua text-6xl italic">Stand With Local</div>
+
+            <div className="font-bold">
+              masuk
             </div>
-            <div ref={logoRef} className="self-end">
-              <Image src="/images/logogram.png" width={200} height={200} alt='logogram'></Image>
+
+            <div>fb login</div>
+            <div>google login</div>
+            
+            <div className="grid grid-cols-3">
+              <div className="flex items-center justify-center"><div className="border-[1px] border-gray-400 w-full"></div></div>
+              <div className="flex items-center justify-center">atau</div>
+              <div className="flex items-center justify-center"><div className="border-[1px] border-gray-400 w-full"></div></div>
             </div>
+
+            <div><input type="text" placeholder="email atau nomor ponsel"/></div>
+
+            <div><button onClick={handleLogin}>lanjut</button></div>
+
+            <div>tidak memiliki akun? <Link href="/register" passHref><a className="text-sigap-ijo">Daftar</a></Link></div>
           </div>
         </div>
       </div>
     </>
+    // <>
+    //   <div className="bg-abuabu min-h-screen font-lato">
+    //     <div className="flex flex-row min-h-screen items-center">
+    //       <form ref={formRef} onSubmit={handleLogin} className="w-5/12 px-12 py-8 self-stretch">
+    //         <div className="bg-hijau-tua rounded-3xl text-putih p-8 h-full flex flex-col justify-between">
+    //           <div>I - DEPTHRIVE | Stand With Local</div>
+    //           <div className="font-bold">Telah memiliki 500 juta pengguna di seluruh Dunia (contohnya)</div>
+    //           <div className="flex flex-col gap-4">
+    //             <div>
+    //               <button type="button" className="py-2 px-4 flex justify-center items-center bg-merah hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
+    //                 <svg width="20" height="20" fill="currentColor" className="mr-2" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+    //                   <path d="M896 786h725q12 67 12 128 0 217-91 387.5t-259.5 266.5-386.5 96q-157 0-299-60.5t-245-163.5-163.5-245-60.5-299 60.5-299 163.5-245 245-163.5 299-60.5q300 0 515 201l-209 201q-123-119-306-119-129 0-238.5 65t-173.5 176.5-64 243.5 64 243.5 173.5 176.5 238.5 65q87 0 160-24t120-60 82-82 51.5-87 22.5-78h-436v-264z">
+    //                   </path>
+    //                 </svg>
+    //                 Sign in with Google
+    //               </button>
+    //             </div>
+    //             <div className="flex flex-row border-hijau-black border-2 rounded-lg ">
+    //               <span className="w-12 p-2 text-center"><i className="fa fa-envelope-o fa-lg" aria-hidden="true"></i></span>
+    //               <input className="bg-hijau-tua grow focus:outline-none" type="text" name="email" id="email" placeholder="" />
+    //             </div>
+    //             <div className="flex flex-row border-hijau-black border-2 bg-hijau-dark rounded-lg ">
+    //               <span className="w-12 p-2 text-center"><i className="fa fa-user-o fa-lg" aria-hidden="true"></i></span>
+    //               <input className="bg-hijau-dark grow focus:outline-none" type="text" name="user" id="user" />
+    //             </div>
+    //             <div className="flex flex-row border-hijau-black border-2 rounded-lg ">
+    //               <span className="w-12 p-2 text-center"><i className="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+    //               <input className="bg-hijau-tua grow focus:outline-none" type="password" name="password" id="password" />
+    //             </div>
+    //             <div>
+    //               <input type="checkbox" name="agree" id="agree" />
+    //               <label htmlFor="agree">Saya Menyetujui Syarat dan Ketentuan yang Berlaku</label>
+    //             </div>
+    //           </div>
+    //           <button type="submit" className="uppercase bg-hijau-dark w-full p-4 rounded-xl font-bold text-abuabu hover:text-putih">
+    //             masuk
+    //           </button>
+    //           <div>
+    //             Tidak Memiliki Akun? <span className="text-biru cursor-pointer">Buat Akun</span>
+    //           </div>
+    //         </div>
+    //       </form>
+    //       <div className="grow h-screen py-24 pr-20 flex flex-col justify-between">
+    //         <Link href='/' passHref>
+    //           <div ref={backRef} className="self-end pb-12 cursor-pointer font-bold text-hijau-tua">
+    //             <i className="fa fa-home fa-2x" aria-hidden="true"></i> Kembali ke Beranda
+    //           </div>
+    //         </Link>
+    //         <div className="grow">
+    //           <div ref={titleRef} className="uppercase text-hijau-tua text-7xl font-extrabold">freelance sigap</div>
+    //           <div ref={subTitleRef} className="text-hijau-tua text-6xl italic">Stand With Local</div>
+    //         </div>
+    //         <div ref={logoRef} className="self-end">
+    //           <Image src="/images/logogram.png" width={200} height={200} alt='logogram'></Image>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </>
     // <>
     //   <div className="min-h-screen bg-abuabu flex items-center justify-center">
     //     <div className="flex justify-between flex-col h-[80vh] mx-4 md:mx-12 w-full max-w-md px-4 py-8 bg-emerald-700 rounded-[30px] shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
