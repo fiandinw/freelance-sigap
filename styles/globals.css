@@ -65,6 +65,11 @@ input[type=number] {
   height: 5px;
 }
 
+::-webkit-scrollbar:hover {
+  width: 5px;
+  height: 5px;
+}
+
 ::-webkit-scrollbar-thumb {
   background: #ffffff;
   border-radius: 50px;

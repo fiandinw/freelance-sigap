@@ -51,7 +51,8 @@ export default function Register() {
             <input className="border-2 border-sigap-abu rounded-full w-full px-4 py-1" type="number" placeholder="Nomor Ponsel" />
           </div>
 
-            <div className="w-full"><button className="bg-sigap-ijo text-white text-xl rounded-full w-full px-8 py-3" onClick={handleRegister}>Daftar</button></div>
+          <div className="w-full"><button className="bg-sigap-ijo text-white text-xl rounded-full w-full px-8 py-3" onClick={handleRegister}>Daftar</button></div>
+          <div className="text-sigap-abu">Sudah memiliki akun? <Link href="/login" passHref><a className="text-sigap-ijo">Masuk</a></Link></div>
         </div>
       </div>
 

@@ -2,6 +2,7 @@ import Footer from "../../components/Footer";
 import HeadNav from "../../components/HeadNav";
 import { useRouter } from 'next/router'
 import Sticky from "react-sticky-el";
+import Link from "next/link";
 
 function Deskripsi() {
   const router = useRouter()
@@ -20,9 +21,9 @@ function Deskripsi() {
           {id}
         </div>
 
-        <div className="flex flex-row gap-8">
+        <div className="flex flex-row gap-8 relative">
           <div className="w-8/12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus similique commodi repellendus iste nobis neque, ex culpa pariatur quam est accusantium sequi deleniti placeat rerum temporibus autem quaerat esse incidunt. Excepturi repudiandae ab fugiat laborum perspiciatis natus! Eum nulla quasi error accusantium quisquam voluptates in quidem, dolore, praesentium, porro necessitatibus excepturi non. Soluta ullam perferendis officia cupiditate vero veniam repellendus accusantium ipsum? Ipsum accusantium dicta voluptates omnis qui impedit tempore, voluptatibus odit inventore quod consectetur libero asperiores beatae nostrum tempora eum, nemo facere? Odit suscipit doloribus sint sapiente repellendus numquam quasi. Eaque inventore labore necessitatibus ratione quam repellendus nisi.</div>
-          <Sticky className="w-4/12 relative">
+          <Sticky className="w-4/12" topOffset={-170} stickyClassName="mt-44" >
             <div className="shadow-xl flex flex-col ml-4">
               <div className="grid grid-cols-3">
                 <div className="flex py-6 font-semibold items-center justify-center border-b-4 border-sigap-ijo text-sigap-ijo">XXX Rb</div>
@@ -41,7 +42,7 @@ function Deskripsi() {
                   </div>
                   <div className="border-[1px] border-gray-300 my-6"></div>
                   <div className="text-center">
-                    <button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">chat & nego</button>
+                    <Link href="/order-detail" passHref><button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">chat & nego</button></Link>
                     <div className="mt-2">Anda belum akan dikenakan biaya</div>
                   </div>
                 </div>

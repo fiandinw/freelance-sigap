@@ -12,12 +12,15 @@ export default function Pembayaran() {
           <Link href="/order-detail" passHref>
             <div>Order Detail</div>
           </Link>
-          <div  className="text-sigap-ijo font-semibold">Pembayaran</div>
+          <div className="text-sigap-ijo font-semibold">Pembayaran</div>
         </div>
 
         <div className="flex flex-row">
-          <div className="w-8/12"></div>
-          <Sticky className="w-4/12 relative">
+          <div className="w-8/12 flex flex-col">
+            <div>asd</div>
+            <div>asd</div>
+          </div>
+          <Sticky className="w-4/12 relative" topOffset={-170} stickyClassName="mt-44">
             <div className="shadow-lg flex flex-col p-4">
               <div className="font-bold capitalize text-lg">rincian pembayaran</div>
               <div className="flex justify-between">

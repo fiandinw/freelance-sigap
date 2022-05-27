@@ -7,7 +7,7 @@ function HeadNav(props) {
   return (
     props.type === 'landing' ? (
       // px di header menentukan layout keselruhan
-      <header className="fixed top-0 w-screen z-50 px-16 2xl:px-32 py-8">
+      <header id="headnav" className="fixed top-0 w-screen z-50 px-16 2xl:px-32 py-8">
         <nav className="bg-white flex flex-row items-center justify-between rounded-full px-4 py-2 shadow-lg">
 
           <Link href="/" passHref>
