@@ -1,20 +1,34 @@
 import { useRouter } from "next/router"
 import Link from "next/link";
-
-
+import { SignUp } from "../lib/firebase"
+import { useState } from "react";
+import swal from "sweetalert";
 
 export default function Register() {
   const router = useRouter()
 
+  const [models, setModels] = useState({
+    email:''
+  })
+
   const handleRegister = (e) => {
     e.preventDefault()
-    swal({
-      title: "Daftar Berhasil",
-      text: "Silahkan Login",
-      icon: "success",
-    }).then(() => {
-      router.push('/login')
+    SignUp(models.email,"123456")
+    .then(() => {
+      swal({
+        title: "Daftar Berhasil",
+        text: "Silahkan Login",
+        icon: "success",
+      }).then(() => {
+        router.push('/login')
+      })
+    }).catch((err) => {
+      console.log(err)
     })
+  }
+
+  const handleModels = (e) => {
+    setModels({...models, [e.target.id]:e.target.value})
   }
 
   return (
@@ -44,7 +58,7 @@ export default function Register() {
             <input className="border-2 border-sigap-abu rounded-full w-full px-4 py-1" type="text" placeholder="Username" />
             <input className="border-2 border-sigap-abu rounded-full w-full px-4 py-1" type="text" placeholder="Nama Depan" />
             <input className="border-2 border-sigap-abu rounded-full w-full px-4 py-1" type="text" placeholder="Nama Belakang" />
-            <input className="border-2 border-sigap-abu rounded-full w-full px-4 py-1" type="text" placeholder="Alamat Email" />
+            <input onChange={handleModels} id="email" value={models.email} className="border-2 border-sigap-abu rounded-full w-full px-4 py-1" type="text" placeholder="Alamat Email" />
             <input className="border-2 border-sigap-abu rounded-full w-full px-4 py-1" type="password" placeholder="Password" />
             <input className="border-2 border-sigap-abu rounded-full w-full px-4 py-1" type="password" placeholder="Konfirmasi Password" />
             <div className="capitalize font-bold">kontak informasi</div>

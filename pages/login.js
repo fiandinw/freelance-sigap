@@ -13,16 +13,16 @@ function Login() {
   const subTitleRef = useRef()
   const logoRef = useRef()
   const backRef = useRef()
-  const timeline = gsap.timeline({ defaults: { duration: 1, opacity: 0 } })
+  // const timeline = gsap.timeline({ defaults: { duration: 1, opacity: 0 } })
 
   useEffect(() => {
-    timeline
-      .from(formRef.current, { x: '-100%' })
-      .from(titleRef.current, { x: '-50%' }, '<.5')
-      .from(subTitleRef.current, { x: '-50%' }, '<.25')
-      .from(logoRef.current, { x: '+100%' }, '<.5')
-      .from(backRef.current, { x: '+100%' }, '<.5')
-  }, [timeline])
+    // timeline
+    //   .from(formRef.current, { x: '-100%' })
+    //   .from(titleRef.current, { x: '-50%' }, '<.5')
+    //   .from(subTitleRef.current, { x: '-50%' }, '<.25')
+    //   .from(logoRef.current, { x: '+100%' }, '<.5')
+    //   .from(backRef.current, { x: '+100%' }, '<.5')
+  }, [])
 
   const handleLogin = (e) => {
     e.preventDefault()
