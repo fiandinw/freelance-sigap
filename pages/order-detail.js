@@ -22,6 +22,7 @@ export default function OrderDetail() {
                 <div>bintang</div>
               </div>
             </div>
+
             <div className="uppercase font-semibold text-4xl">paket basic</div>
             <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, vel. Impedit consectetur voluptatem quod ipsum aperiam modi voluptatum culpa, molestias amet odio ipsam illo autem earum, soluta rem optio accusamus dolorem in labore harum minima ratione maiores! Magnam sequi quibusdam facilis accusantium corporis quia doloribus optio neque cumque dicta ipsum, quo adipisci fugit deleniti! Magni inventore expedita eos blanditiis quo asperiores sunt quas aperiam sint, sapiente, praesentium minus unde at omnis dignissimos illo cumque quos id debitis, consectetur maxime? Quas temporibus non, vitae culpa omnis officiis voluptas id sequi deserunt saepe placeat nobis totam magni voluptatibus fuga obcaecati itaque voluptatem?</div>
             <div className="border-2 p-4">
@@ -40,6 +41,31 @@ export default function OrderDetail() {
               <div className="flex flex-row items-center gap-2">
                 <i className="fa fa-check-circle fa-2x text-sigap-ijo" aria-hidden="true"></i>
                 <div>luaran produk</div>
+              </div>
+            </div>
+
+            <div className="text-sigap-ijo text-4xl capitalize font-semibold">tambahkan extra lainnya</div>
+            <div className="flex flex-col gap-4 px-12">
+              <div className="flex flex-row justify-between">
+                <div className="inline-flex">
+                  <input className="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-sigap-ijo checked:border-transparent focus:outline-none" type="checkbox" name="ekstra1" id="ekstra1" />
+                  <label htmlFor="ekstra1">&nbsp;ekstra1</label>
+                </div>
+                <div>Rp. x</div>
+              </div>
+              <div className="flex flex-row justify-between">
+                <div className="inline-flex">
+                  <input className="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-sigap-ijo checked:border-transparent focus:outline-none" type="checkbox" name="ekstra2" id="ekstra2" />
+                  <label htmlFor="ekstra2">&nbsp;ekstra2</label>
+                </div>
+                <div>Rp. x</div>
+              </div>
+              <div className="flex flex-row justify-between">
+                <div className="inline-flex">
+                  <input className="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-sigap-ijo checked:border-transparent focus:outline-none" type="checkbox" name="ekstra3" id="ekstra3" />
+                  <label htmlFor="ekstra3">&nbsp;ekstra3</label>
+                </div>
+                <div>Rp. x</div>
               </div>
             </div>
           </div>

@@ -16,9 +16,22 @@ export default function Pembayaran() {
         </div>
 
         <div className="flex flex-row">
-          <div className="w-8/12 flex flex-col">
-            <div>asd</div>
-            <div>asd</div>
+          <div className="w-8/12 flex flex-col mr-8 pt-4">
+            <div className="border-2 font-bold p-4">Metode Pembayaran</div>
+            <div className="flex flex-col gap-4 p-4 border-2 border-t-0">
+              <div>
+                <input type="radio" name="metode" id="metode1"/>
+                <label htmlFor="metode1">&nbsp;COD &#40;Sekitar Cibiru&#41;</label>
+              </div>
+              <div>
+                <input type="radio" name="metode" id="metode2" />
+                <label htmlFor="metode1">&nbsp;E-Wallet</label>
+              </div>
+              <div>
+                <input type="radio" name="metode" id="metode3" />
+                <label htmlFor="metode1">&nbsp;Transfer Bank &#40;Verifikasi Manual&#41;</label>
+              </div>
+            </div>
           </div>
           <Sticky className="w-4/12 relative" topOffset={-170} stickyClassName="mt-44">
             <div className="shadow-lg flex flex-col p-4">
@@ -41,7 +54,7 @@ export default function Pembayaran() {
                 <div className="text-xl font-bold text-sigap-ijo">X Hari</div>
               </div>
               <div className="border-[1px] border-gray-300 my-6"></div>
-              <button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">Bayar</button>
+              <a target="_blank" rel="noreferrer" href="https://sample-demo-dot-midtrans-support-tools.et.r.appspot.com/snap"><button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">Bayar</button></a>
               <div className="mt-2 text-center">Anda belum akan dikenakan biaya</div>
             </div>
           </Sticky>
