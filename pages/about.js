@@ -77,20 +77,20 @@ function Products() {
               </div> */}
               <div>
                 <img src="/images/about-alif.png" alt="alif" />
-                <div className="border-b-8 border-sigap-ijo text-2xl">
+                <div className="border-b-8 border-sigap-ijo text-2xl mt-8">
                   Alif Nur Muhammad
                 </div>
               </div>
               <div>
                 <img src="/images/about-aziz.png" alt="aziz" />
-                <div className="border-b-8 border-sigap-ijo text-2xl">
-                  Alif Nur Muhammad
+                <div className="border-b-8 border-sigap-ijo text-2xl mt-8">
+                Muhammad Aziz
                 </div>
               </div>
               <div>
                 <img src="/images/about-alifiandi.png" alt="alifiandi" />
-                <div className="border-b-8 border-sigap-ijo text-2xl">
-                  Alif Nur Muhammad
+                <div className="border-b-8 border-sigap-ijo text-2xl mt-8">
+                Alifiandi Nursanni
                 </div>
               </div>
             </div>
