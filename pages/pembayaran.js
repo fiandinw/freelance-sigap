@@ -20,7 +20,7 @@ export default function Pembayaran() {
             <div className="border-2 font-bold p-4">Metode Pembayaran</div>
             <div className="flex flex-col gap-4 p-4 border-2 border-t-0">
               <div>
-                <input type="radio" name="metode" id="metode1"/>
+                <input type="radio" name="metode" id="metode1" />
                 <label htmlFor="metode1">&nbsp;COD &#40;Sekitar Cibiru&#41;</label>
               </div>
               <div>
@@ -54,6 +54,9 @@ export default function Pembayaran() {
                 <div className="text-xl font-bold text-sigap-ijo">X Hari</div>
               </div>
               <div className="border-[1px] border-gray-300 my-6"></div>
+              <div className="text-center mb-4">
+                <Link href="/my-order" passHref><button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">cek status order</button></Link>
+              </div>
               <a target="_blank" rel="noreferrer" href="https://sample-demo-dot-midtrans-support-tools.et.r.appspot.com/snap"><button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">Bayar</button></a>
               <div className="mt-2 text-center">Anda belum akan dikenakan biaya</div>
             </div>

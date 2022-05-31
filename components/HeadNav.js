@@ -63,7 +63,9 @@ function HeadNav(props) {
             </Link>
             <div>Price List</div>
             <div>My List</div>
-            <div>My Order</div>
+            <Link href="/my-order" passHref>
+              <div className="cursor-pointer">My Order</div>
+            </Link>
             <div>My Claim</div>
           </div>
           <div className="flex flex-row gap-4 items-center">
