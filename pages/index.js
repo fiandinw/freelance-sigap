@@ -81,6 +81,12 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="relative shadow-lg p-8" data-aos="fade-up">
+          <div className="text-justify font-semibold text-sigap-abu">
+          Freelance Sigap merupakan penyedia jasa di bidang multimedia dan produk kreatif. Kami berkomitmen menyediakan pelayanan yang efektif dalam transaksi jasa. Upaya kami tetap memberikan performa terbaik untuk para pembeli, sehingga kenyamanan pembeli lebih diprioritaskan. Selain daripada itu, kami pun berupaya membuat klasifikasi pasar untuk para pembuat jasa dengan tujuan memberikan umpan balik yang sesuai.
+          </div>
+        </section>
+
         <section className="w-full flex flex-col items-center gap-8">
           <div className="font-lato font-bold text-4xl">Our Service</div>
           <div className="flex flex-row gap-16">
