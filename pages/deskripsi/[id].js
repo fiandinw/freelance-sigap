@@ -45,7 +45,7 @@ function Deskripsi() {
                 <Link href="/order-detail" passHref><button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">order now</button></Link>
               </div>
                   <div className="text-center">
-                    <a href="https://api.whatsapp.com/send?phone=628123456789&text=Halo%20Saya%20Mau%20order" rel="noreferrer" target="_blank"><button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">chat & nego</button></a>
+                    <a href="https://api.whatsapp.com/send?phone=6285777620414&text=Halo%20Saya%20Mau%20order" rel="noreferrer" target="_blank"><button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">chat & nego</button></a>
                     <div className="mt-2">Anda belum akan dikenakan biaya</div>
                   </div>
                 </div>
