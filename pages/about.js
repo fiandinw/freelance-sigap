@@ -9,7 +9,7 @@ function Products() {
       <main className="pt-32 pb-32 px-8 flex flex-col min-h-screen gap-8">
         <div>
           <h1 className="text-4xl text-center uppercase text-sigap-ijo font-semibold mb-4">about</h1>
-          <p className="bg-white text-hitam p-8 leading-8 rounded-lg text-center shadow-lg">
+          <p className="bg-white p-8 leading-8 rounded-lg text-center shadow-lg font-semibold text-sigap-abu">
           Sebuah startup yang ingin melahirkan performa untuk kenyamanan pembeli dan kesesuaian pasar pada pembuat jasa. Disamping itu, banyaknya problematika sosial menjadi key indicator operasional kami.
           </p>
         </div>

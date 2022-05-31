@@ -27,7 +27,9 @@ function HeadNav(props) {
             <div className="uppercase cursor-pointer">
               {router.pathname != '/' ? <Link href="/#faqsection" passHref>faq</Link> : <a href="#faqsection">faq</a>}
             </div>
-            <div className="capitalize cursor-pointer">description</div>
+            <Link href="/description" passHref>
+              <div className="capitalize cursor-pointer">description</div>
+            </Link>
             <Link href="/support-center" passHref>
               <div className="capitalize cursor-pointer">support center</div>
             </Link>
