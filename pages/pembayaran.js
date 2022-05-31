@@ -54,12 +54,12 @@ export default function Pembayaran() {
                 <div className="text-xl font-bold text-sigap-ijo">X Hari</div>
               </div>
               <div className="border-[1px] border-gray-300 my-6"></div>
-              <div className="text-center mb-4">
-                <Link href="/my-order" passHref><button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">cek status order</button></Link>
-              </div>
               <a target="_blank" rel="noreferrer" href="https://sample-demo-dot-midtrans-support-tools.et.r.appspot.com/snap"><button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">Bayar</button></a>
               <div className="mt-2 text-center">Anda belum akan dikenakan biaya</div>
             </div>
+            <div className="text-center mt-8">
+                <Link href="/my-order" passHref><button className="capitalize shadow-xl bg-sigap-ijo text-white rounded-full w-fit py-4 px-8 font-bold">cek status order</button></Link>
+              </div>
           </Sticky>
         </div>
       </main>
