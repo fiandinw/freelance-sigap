@@ -70,7 +70,9 @@ function HeadNav(props) {
           </div>
           <div className="flex flex-row gap-4 items-center">
             <div><i className="fa fa-bell fa-lg text-sigap-ijo" aria-hidden="true"></i></div>
-            <div><i className="fa fa-user-circle fa-2x" aria-hidden="true"></i></div>
+            <Link href="/profil" passHref>
+              <div><i className="fa fa-user-circle fa-2x" aria-hidden="true"></i></div>
+            </Link>
           </div>
         </div>
         <div className="border-y-2 w-screen px-16 2xl:px-32 py-2 flex flex-row justify-between">
