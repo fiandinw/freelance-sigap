@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import HeadNav from "../components/HeadNav";
 
-export default function () {
+export default function MyOrder() {
   return (<>
     <HeadNav />
     <div className="pt-44 pb-32 px-28 2xl:px-32 flex flex-col gap-8">
