@@ -62,8 +62,17 @@ export default function Home() {
           <div className="">
             <img className="max-w-[18rem]" src="/images/girl-landing.png" alt="landing girl" />
           </div>
-          <div className="w-4/12 text-right">
+          <div className="w-4/12 text-right flex flex-col justify-between">
             <div className="font-lato font-bold text-5xl 2xl:text-6xl">Find The Best <span className="text-sigap-ijo">Freelancers</span> Here</div>
+            <div className="self-start grow flex items-center">
+              <ul className="font-semibold text-sigap-ijo uppercase text-2xl text-left">
+                <li><i className="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Money Guarantee</li>
+                <li><i className="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Safe Transaction</li>
+                <li><i className="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Efficient</li>
+                <li><i className="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Flexible</li>
+                <li><i className="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Good Service</li>
+              </ul>
+            </div>
           </div>
         </section>
 
