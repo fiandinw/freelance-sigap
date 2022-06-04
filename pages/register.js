@@ -35,11 +35,12 @@ export default function Register() {
     <>
       <div className="flex w-screen items-center justify-center py-12">
         <div className="shadow-2xl flex flex-col items-center p-8 gap-4 w-[400px]">
+          <Link href="/" passHref>
           <div className="flex items-center gap-2 cursor-pointer">
             <img className="w-8" src="/images/logogram.png" alt="logogram" />
             <div className="capitalize font-lato"><span className="font-extrabold text-sigap-ijo">freelance</span> <span className="font-bold">sigap</span></div>
           </div>
-
+          </Link>
           <div className="font-bold self-start text-2xl mt-4">
             Daftar
           </div>
