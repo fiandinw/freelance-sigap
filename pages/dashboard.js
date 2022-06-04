@@ -11,13 +11,13 @@ function Dashboard() {
         <main className="pt-48 pb-32 px-28 2xl:px-32 flex flex-col gap-24 items-center">
 
           <section className="w-full flex flex-row items-center justify-evenly">
-            <Link href="/custom-request" passHref>
+            <Link href="/custom-order" passHref>
               <div className="w-80 h-80 shadow-lg p-4 flex flex-col justify-between hover:bg-sigap-ijo hover:text-white transition duration-300 ease-in-out cursor-pointer">
                 <div className="self-end">icon</div>
                 <div className="grow flex items-center justify-center">
                   <img className="bg-green-300 rounded-full w-48" src="/images/SigapBot1.png" alt="sigapbot" />
                 </div>
-                <div className="font-lato font-medium text-4xl text-center">Custom Request</div>
+                <div className="font-lato font-medium text-4xl text-center">Custom Order</div>
               </div>
             </Link>
             <Link href="/instant-order" passHref>
