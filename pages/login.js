@@ -60,10 +60,13 @@ function Login() {
 
           <div className="w-full"><input className="border-2 border-gray-400 rounded-full w-full px-8 py-3" type="text" placeholder="Email atau Nomor Ponsel" /></div>
           <div className="w-full"><input className="border-2 border-gray-400 rounded-full w-full px-8 py-3" type="password" placeholder="Password" /></div>
+          <Link href="/forgot">
+            <div className="text-sigap-ijo font-semibold self-end text-sm cursor-pointer">Lupa Kata Sandi?</div>
+          </Link>
 
           <div className="w-full"><button className="bg-sigap-ijo text-white text-xl rounded-full w-full px-8 py-3" onClick={handleLogin}>Lanjut</button></div>
 
-          <div className="text-sigap-abu">Lupa Akun? <a className="text-sigap-ijo">Reset Password</a></div>
+          {/* <div className="text-sigap-abu">Lupa Akun? <a className="text-sigap-ijo">Reset Password</a></div> */}
           <div className="text-sigap-abu">Tidak memiliki akun? <Link href="/register" passHref><a className="text-sigap-ijo">Daftar</a></Link></div>
         </div>
       </div>
