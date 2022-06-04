@@ -11,7 +11,7 @@ function PriceList() {
           <div className="w-3/12 shadow-lg text-center p-4">
             <div className="text-2xl font-medium">Hi user,</div>
             <div className="mt-4">Buat custom order dan Dapatkan penawaran dari penjual untuk proyek anda</div>
-            <div className="mt-16"><Link href="/custom-request" passHref><button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">custom request</button></Link>
+            <div className="mt-16"><Link href="/custom-order" passHref><button className="capitalize bg-sigap-ijo text-white rounded-full w-full py-4 font-bold">custom order</button></Link>
             </div>
           </div>
           <div className="grow">promo</div>
