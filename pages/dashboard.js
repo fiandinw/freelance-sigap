@@ -34,7 +34,7 @@ function Dashboard() {
               <div className="grow flex items-center justify-center">
                 <img className="bg-green-300 rounded-full w-48" src="/images/SigapBot1.png" alt="sigapbot" />
               </div>
-              <div className="font-lato font-medium text-4xl text-center">Main Profile</div>
+              <div className="font-lato font-medium text-4xl text-center">Status Order</div>
             </div>
           </section>
 
@@ -60,7 +60,7 @@ function Dashboard() {
                 <div className="flex flex-row w-full items-end justify-between">
                   <div className="text-center">
                     <div className="font-semibold text-gray-400">Start from</div>
-                    <div className="text-sigap-ijo">Rp <span className="font-black text-2xl">250</span>.000</div>
+                    <div className="text-sigap-ijo">Rp <span className="font-black text-2xl">250</span>.K</div>
                   </div>
                   <Link href="/deskripsi/logo" passHref><button className="text-white bg-sigap-ijo px-6 p-2 rounded-full">Apply Now</button></Link>
                 </div>
@@ -75,7 +75,7 @@ function Dashboard() {
                 <div className="flex flex-row w-full items-end justify-between">
                   <div className="text-center">
                     <div className="font-semibold text-gray-400">Start from</div>
-                    <div className="text-sigap-ijo">Rp <span className="font-black text-2xl">249</span>.999</div>
+                    <div className="text-sigap-ijo">Rp <span className="font-black text-2xl">249</span>.K</div>
                   </div>
                   <Link href="/deskripsi/grafis" passHref><button className="text-white bg-sigap-ijo px-6 p-2 rounded-full">Apply Now</button></Link>
                 </div>
@@ -90,7 +90,7 @@ function Dashboard() {
                 <div className="flex flex-row w-full items-end justify-between">
                   <div className="text-center">
                     <div className="font-semibold text-gray-400">Start from</div>
-                    <div className="text-sigap-ijo">Rp <span className="font-black text-2xl">250</span>.000</div>
+                    <div className="text-sigap-ijo">Rp <span className="font-black text-2xl">250</span>.K</div>
                   </div>
                   <Link href="/deskripsi/SEO" passHref><button className="text-white bg-sigap-ijo px-6 p-2 rounded-full">Apply Now</button></Link>
                 </div>

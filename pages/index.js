@@ -58,20 +58,39 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full flex flex-row justify-between" data-aos="fade-up">
+        <section className="w-full flex flex-row" data-aos="fade-up">
           <div className="">
-            <img className="max-w-[18rem]" src="/images/girl-landing.png" alt="landing girl" />
+            <img className="max-w-[21rem]" src="/images/girl-landing.png" alt="landing girl" />
           </div>
-          <div className="w-4/12 text-right flex flex-col justify-between">
-            <div className="font-lato font-bold text-5xl 2xl:text-6xl">Find The Best <span className="text-sigap-ijo">Freelancers</span> Here</div>
-            <div className="self-end grow flex items-center">
-              <ul className="font-semibold text-sigap-ijo uppercase text-3xl">
-                <li>Money Guarantee&nbsp;&nbsp;<i className="fa fa-check-circle" aria-hidden="true"></i></li>
-                <li>Safe Transaction&nbsp;&nbsp;<i className="fa fa-check-circle" aria-hidden="true"></i></li>
-                <li>Efficient&nbsp;&nbsp;<i className="fa fa-check-circle" aria-hidden="true"></i></li>
-                <li>Flexible&nbsp;&nbsp;<i className="fa fa-check-circle" aria-hidden="true"></i></li>
-                <li>Good Service&nbsp;&nbsp;<i className="fa fa-check-circle" aria-hidden="true"></i></li>
-              </ul>
+          <div className="w-full text-right flex flex-col gap-8">
+            <div className="font-lato font-bold text-5xl 2xl:text-6xl pl-96 2xl:pl-[40rem]">Find The Best <span className="text-sigap-ijo">Freelancers</span> Here</div>
+            <div className="flex pl-24">
+              <div className="flex flex-row gap-8">
+                <div className="w-36 h-36 p-4 shadow-lg rounded-lg flex flex-col items-center justify-center font-lato text-center">
+                  <i className="fa fa-fork-awesome fa-4x text-sigap-ijo" aria-hidden="true"></i>
+                  <div>Money Guarantee</div>
+                </div>
+                <div className="w-36 h-36 p-4 shadow-lg rounded-lg flex flex-col items-center justify-center font-lato text-center">
+                  <i className="fa fa-fork-awesome fa-4x text-sigap-ijo" aria-hidden="true"></i>
+                  <div>Safe Transaction</div>
+                </div>
+                <div className="w-36 h-36 p-4 shadow-lg rounded-lg flex flex-col items-center justify-center font-lato text-center">
+                  <i className="fa fa-fork-awesome fa-4x text-sigap-ijo" aria-hidden="true"></i>
+                  <div>Efficient</div>
+                </div>
+              </div>
+            </div>
+            <div className="flex pl-48">
+              <div className="flex flex-row gap-8">
+                <div className="w-36 h-36 p-4 shadow-lg rounded-lg flex flex-col items-center justify-center font-lato text-center">
+                  <i className="fa fa-fork-awesome fa-4x text-sigap-ijo" aria-hidden="true"></i>
+                  <div>Flexible</div>
+                </div>
+                <div className="w-36 h-36 p-4 shadow-lg rounded-lg flex flex-col items-center justify-center font-lato text-center">
+                  <i className="fa fa-fork-awesome fa-4x text-sigap-ijo" aria-hidden="true"></i>
+                  <div>Good Service</div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -95,7 +114,7 @@ export default function Home() {
           <div className="flex flex-row gap-16">
             <Link href="/custom-request" passHref>
               <div className="w-80 h-80 shadow-lg p-4 flex flex-col justify-between hover:bg-sigap-ijo hover:text-white transition duration-300 ease-in-out cursor-pointer"
-              data-aos="fade-up"
+                data-aos="fade-up"
               >
                 <div className="self-end">icon</div>
                 <div className="grow flex items-center justify-center">
@@ -106,8 +125,8 @@ export default function Home() {
             </Link>
             <Link href="/instant-order" passHref>
               <div className="w-80 h-80 shadow-lg p-4 flex flex-col justify-between hover:bg-sigap-ijo hover:text-white transition duration-300 ease-in-out cursor-pointer"
-              data-aos="fade-up"
-              data-aos-delay="250"
+                data-aos="fade-up"
+                data-aos-delay="250"
               >
                 <div className="self-end">icon</div>
                 <div className="grow flex items-center justify-center">
@@ -117,8 +136,8 @@ export default function Home() {
               </div>
             </Link>
             <div className="w-80 h-80 shadow-lg p-4 flex flex-col justify-between hover:bg-sigap-ijo hover:text-white transition duration-300 ease-in-out cursor-pointer"
-            data-aos="fade-up"
-            data-aos-delay="500"
+              data-aos="fade-up"
+              data-aos-delay="500"
             >
               <div className="self-end">icon</div>
               <div className="grow flex items-center justify-center">
@@ -135,28 +154,28 @@ export default function Home() {
           </div>
           <div className="flex gap-4">
             <div className="relative bg-putih w-[300px] h-[200px]"
-             data-aos="fade-up"
+              data-aos="fade-up"
             >
               <img className="absolute" src="https://picsum.photos/300/200" alt="foto" />
               <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
               <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
             </div>
             <div className="relative bg-putih w-[300px] h-[200px]"
-             data-aos="fade-up"
+              data-aos="fade-up"
             >
               <img className="absolute" src="https://picsum.photos/300/200" alt="foto" />
               <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
               <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
             </div>
             <div className="relative bg-putih w-[300px] h-[200px]"
-             data-aos="fade-up"
+              data-aos="fade-up"
             >
               <img className="absolute" src="https://picsum.photos/300/200" alt="foto" />
               <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>
               <div className="absolute w-full h-full text-abuabu flex items-center justify-center">Kategori</div>
             </div>
             <div className="relative bg-putih w-[300px] h-[200px]"
-             data-aos="fade-up"
+              data-aos="fade-up"
             >
               <img className="absolute" src="https://picsum.photos/300/200" alt="foto" />
               <div className="absolute w-full h-full bg-hitam bg-opacity-50"></div>

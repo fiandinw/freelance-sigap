@@ -80,6 +80,14 @@ export default function OrderDetail() {
                 <div>Biaya Penanganan</div>
                 <div>Rp. x</div>
               </div>
+              <div className="border-2 rounded-lg p-2 flex justify-between mt-4">
+                <div>Masukan Voucher</div>
+                <div>k</div>
+              </div>
+              <div className="flex justify-between mt-2">
+                <div>Total Diskon</div>
+                <div>-Rp. x</div>
+              </div>
               <div className="border-[1px] border-gray-300 my-6"></div>
               <div className="flex justify-between">
                 <div>Total</div>
