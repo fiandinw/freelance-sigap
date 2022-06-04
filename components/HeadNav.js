@@ -63,12 +63,18 @@ function HeadNav(props) {
             <Link href="/dashboard" passHref>
               <div className="font-bold cursor-pointer">Home</div>
             </Link>
-            <div>Price List</div>
-            <div>My List</div>
+            <Link href="/price-list" passHref>
+              <div className="cursor-pointer">Price List</div>
+            </Link>
+            <Link href="/my-list" passHref>
+              <div>My List</div>
+            </Link>
             <Link href="/my-order" passHref>
               <div className="cursor-pointer">My Order</div>
             </Link>
-            <div>My Claim</div>
+            <Link href="/my-claim/diskon" passHref>
+              <div>My Claim</div>
+            </Link>
           </div>
           <div className="flex flex-row gap-4 items-center">
             <div><i className="fa fa-bell fa-lg text-sigap-ijo" aria-hidden="true"></i></div>

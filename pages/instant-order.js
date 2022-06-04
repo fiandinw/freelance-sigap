@@ -109,6 +109,14 @@ function Order() {
               </select>
             </div>
             <div className="w-full">
+              <label className="text-hijau-tua font-semibold text-xl" htmlFor="jenisFreelance">Paket</label>
+              <select className="w-full border-hijau-tua border-2 rounded-md bg-hijau-tua px-3 py-1 text-putih focus:outline-none" name="jenisFreelance" id="jenisFreelance">
+                <option value="junior">Basic</option>
+                <option value="senior">Basic</option>
+                <option value="expert">Basic</option>
+              </select>
+            </div>
+            <div className="w-full">
               <label className="text-hijau-tua font-semibold text-xl" htmlFor="jenisFreelance">Kategori Freelance</label>
               <select className="w-full border-hijau-tua border-2 rounded-md bg-hijau-tua px-3 py-1 text-putih focus:outline-none" name="jenisFreelance" id="jenisFreelance">
                 <option value="junior">Junior</option>
