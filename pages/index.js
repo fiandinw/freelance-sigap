@@ -192,7 +192,7 @@ export default function Home() {
           />
           <FaqAccordion
             title="Ada berapa cara order di Freelance Sigap?"
-            description="Terdapat 2 cara order, yakni Instan Order dan Custom Order."
+            description="Terdapat 2 cara order, yakni Instant Order dan Custom Order."
           />
           <FaqAccordion
             title="Bagaimana cara order di Freelance Sigap?"
