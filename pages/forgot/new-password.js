@@ -19,7 +19,7 @@ function Login() {
           </div>
           <div className="w-full"><input className="border-2 border-gray-400 rounded-full w-full px-8 py-3" type="password" placeholder="Masukan Kata Sandi Baru" /></div>
           <div className="w-full"><input className="border-2 border-gray-400 rounded-full w-full px-8 py-3" type="password" placeholder="Masukan Ulang Kata Sandi Baru" /></div>
-          <Link href="/login">
+          <Link href="/login" passHref>
             <div className="w-full mt-16"><button className="bg-sigap-ijo text-white text-xl rounded-full w-full px-8 py-3">Lanjut</button></div>
           </Link>
         </div>

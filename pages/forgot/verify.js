@@ -19,7 +19,7 @@ function Login() {
           </div>
           <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis perspiciatis voluptatem ducimus, dolorem distinctio maiores quo minus praesentium sapiente quaerat eaque necessitatibus, animi eius architecto odit repellendus repellat fugit culpa.</div>
           <div className="w-full"><input className="border-2 border-gray-400 rounded-full w-full px-8 py-3" type="text" placeholder="Kode" /></div>
-          <Link href="/forgot/new-password">
+          <Link href="/forgot/new-password" passHref>
             <div className="w-full mt-16"><button className="bg-sigap-ijo text-white text-xl rounded-full w-full px-8 py-3">Lanjut</button></div>
           </Link>
         </div>

@@ -60,7 +60,7 @@ function Login() {
 
           <div className="w-full"><input className="border-2 border-gray-400 rounded-full w-full px-8 py-3" type="text" placeholder="Email atau Nomor Ponsel" /></div>
           <div className="w-full"><input className="border-2 border-gray-400 rounded-full w-full px-8 py-3" type="password" placeholder="Password" /></div>
-          <Link href="/forgot">
+          <Link href="/forgot" passHref>
             <div className="text-sigap-ijo font-semibold self-end text-sm cursor-pointer">Lupa Kata Sandi?</div>
           </Link>
 

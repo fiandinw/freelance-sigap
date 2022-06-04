@@ -13,7 +13,7 @@ export default function Profil() {
       <FaqAccordion title="Bagaimana cara saya mengubah password?" description="Kamu dapat mengubah password langsung pada bagian profile dan ubah password."/>
       <FaqAccordion title="Apakah boleh mengganti alamat email?" description="Ya. Pastikan alamat email yang kamu ganti adalah alamat email yang aktif."/>
       <FaqAccordion title="Bagaimana jika saya lupa alamat email atau alamat email di-non-aktifkan, dan nomor telepon tidak aktif?" description="Kamu dapat menghubungi Tim Sigap melalui kanal customer service-nya Freelance Sigap."/>
-      <FaqAccordion title="Apakah akun saya dapat ditangguhkan atau dihapus permanent oleh Freelance Sigap?" description={["Ya. Jika kamu melanggar norma yang ditetapkan oleh Freelance Sigap pada bagian klik", <Link href="/tos"><span className="text-sigap-ijo font-semibold cursor-pointer">&nbsp;S&K&nbsp;</span></Link> ,"disini yang tertera."]}/>
+      <FaqAccordion title="Apakah akun saya dapat ditangguhkan atau dihapus permanent oleh Freelance Sigap?" description={["Ya. Jika kamu melanggar norma yang ditetapkan oleh Freelance Sigap pada bagian klik", <Link key={1} href="/tos" passHref><span className="text-sigap-ijo font-semibold cursor-pointer">&nbsp;S&K&nbsp;</span></Link> ,"disini yang tertera."]}/>
       <FaqAccordion title="title" description="desc"/>
     </div>
   </>)
