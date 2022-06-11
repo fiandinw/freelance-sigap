@@ -17,6 +17,7 @@ export default function Home() {
     AOS.init({
       delay: 100
     })
+    window.location.href = "https://freelancesigap.vercel.app/";
   })
 
   return (
